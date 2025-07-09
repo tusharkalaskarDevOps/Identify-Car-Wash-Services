@@ -6,6 +6,7 @@
       <class name="testCases.TestCase">
         <methods>
           <include name="setUpDriver"/>
+          <include name="getCarWashingServiceandPhoneZZZZ"/>
           <include name="searchCarWashService" invocation-numbers="1"/>
           <include name="freeListingValidation" invocation-numbers="1"/>
           <include name="tearDown"/>
