@@ -24,7 +24,7 @@ public class BaseTest {
 		
 		Properties p =  new Properties();
 		try {
-			FileInputStream fis = new FileInputStream("C:\\Users\\2407373\\OneDrive - Cognizant\\Documents\\HackThon_Project\\Identify-Car-Wash-Services\\src\\test\\resources\\config.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
 			p.load(fis);
 		}catch(Exception e) {
 			

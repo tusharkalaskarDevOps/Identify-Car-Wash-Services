@@ -36,9 +36,6 @@ public class GymServicePage extends BasePage{
 	@FindBy(xpath = "//*[text()='Rating']")
 	public WebElement sortByrating;
 
-	@FindBy(xpath="//li[@role='presentation']")
-	public List<WebElement> ratingList;
-
 	@FindBy(xpath = "//address/div/div[2]")
 	public List<WebElement> relevenceList;
 
@@ -57,7 +54,6 @@ public class GymServicePage extends BasePage{
 	@FindBy(xpath = "//button[text()='Apply']")
 	public WebElement applyButton;
 
-
 	@FindBy(xpath = "//div[text()='Clear']")
 	public WebElement clearButton;
 
@@ -72,6 +68,21 @@ public class GymServicePage extends BasePage{
 
 	@FindBy(xpath = "//button[.//div[text()='Jd Verified']]")
 	public WebElement jdVerified;
+
+	@FindBy(xpath = "//nav/ul/li[7]/button")
+	public WebElement rating;
+
+	@FindBy(xpath = "//li[@id='option-1']")
+	public WebElement rating1;
+
+	@FindBy(xpath = "//li[@id='option-2']")
+	public WebElement rating2;
+
+	@FindBy(xpath = "//li[@id='option-3']")
+	public WebElement rating3;
+
+	@FindBy(xpath = "//li[@role='presentation']")
+	public List<WebElement> ratingCountList;
 
 	@FindBy(xpath = "//button[.//div[text()='Deals']]")
 	public WebElement deals;

@@ -136,4 +136,75 @@ public class TestSenario_4 extends BaseTest{
         Assert.assertTrue(true);
     }
 
+    @Test(priority = 8)
+    public void TC24() {
+        System.out.println("Starting Test - TC24...");
+
+        GymServicePage gymPage = new GymServicePage(driver);
+        gymPage.rating.click();
+        gymPage.rating1.click();
+
+        for(WebElement ele : gymPage.ratingCountList){
+            String rating = ele.getText();
+            double val = Double.parseDouble(rating);
+            Assert.assertTrue(val >= 3.5, "Rating is not above 3.5: " + rating);
+        }
+    }
+
+    @Test(priority = 9)
+    public void TC25() {
+        System.out.println("Starting Test - TC25...");
+
+        GymServicePage gymPage = new GymServicePage(driver);
+        gymPage.rating.click();
+        gymPage.rating2.click();
+
+        for(WebElement ele : gymPage.ratingCountList){
+            String rating = ele.getText();
+            double val = Double.parseDouble(rating);
+            Assert.assertTrue(val >= 4.0, "Rating is not above 3.5: " + rating);
+        }
+    }
+
+    @Test(priority = 10)
+    public void TC26() {
+        System.out.println("Starting Test - TC26...");
+
+        GymServicePage gymPage = new GymServicePage(driver);
+        gymPage.rating.click();
+        gymPage.rating3.click();
+
+        for(WebElement ele : gymPage.ratingCountList){
+            String rating = ele.getText();
+            double val = Double.parseDouble(rating);
+            Assert.assertTrue(val >= 4.5, "Rating is not above 4.5: " + rating);
+        }
+    }
+
+    @Test(priority = 11)
+    public void TC27() {
+        System.out.println("Starting Test - TC27...");
+
+        GymServicePage gymPage = new GymServicePage(driver);
+        gymPage.deals.click();
+
+        Assert.assertTrue(true);
+    }
+
+    @Test(priority = 12)
+    public void TC28() {
+        System.out.println("Starting Test - TC28...");
+
+        GymServicePage gymPage = new GymServicePage(driver);
+        gymPage.jdTrust.click();
+
+        Assert.assertTrue(true);
+    }
+
+    @Test(priority = 13)
+    public void clearAllFilters() {
+
+    }
+
+
 }
