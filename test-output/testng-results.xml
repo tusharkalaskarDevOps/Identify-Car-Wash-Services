@@ -1,206 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-09T15:45:12 IST" name="Suite" finished-at="2025-07-09T15:45:58 IST" duration-ms="46247">
+  <suite started-at="2025-07-10T15:41:17 IST" name="Default suite" finished-at="2025-07-10T15:41:33 IST" duration-ms="16592">
     <groups>
     </groups>
-    <test started-at="2025-07-09T15:45:12 IST" name="Test" finished-at="2025-07-09T15:45:58 IST" duration-ms="46247">
-      <class name="testCases.TestCase">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:12 IST" name="setUpDriver" finished-at="2025-07-09T15:45:19 IST" duration-ms="7201" status="PASS">
+    <test started-at="2025-07-10T15:41:17 IST" name="Default test" finished-at="2025-07-10T15:41:33 IST" duration-ms="16592">
+      <class name="testCases.TestSenario_1">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:testCases.TestSenario_1@3eb25e1a]" started-at="2025-07-10T15:41:17 IST" name="setUpDriver" finished-at="2025-07-10T15:41:27 IST" duration-ms="10484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="closeWelcomePopUp()[pri:1, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:19 IST" name="closeWelcomePopUp" finished-at="2025-07-09T15:45:26 IST" duration-ms="6191" status="PASS">
+        <test-method signature="TC1()[pri:1, instance:testCases.TestSenario_1@3eb25e1a]" started-at="2025-07-10T15:41:27 IST" name="TC1" finished-at="2025-07-10T15:41:32 IST" duration-ms="5137" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeWelcomePopUp -->
-        <test-method signature="searchCarWashService(java.lang.String,java.lang.String)[pri:3, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:27 IST" name="searchCarWashService" data-provider="getDataForCarWashing" finished-at="2025-07-09T15:45:29 IST" duration-ms="2522" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chennai]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Car Wash Services]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- TC1 -->
+        <test-method signature="TC2()[pri:2, instance:testCases.TestSenario_1@3eb25e1a]" started-at="2025-07-10T15:41:32 IST" name="TC2" finished-at="2025-07-10T15:41:33 IST" duration-ms="723" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchCarWashService -->
-        <test-method signature="searchCarWashService(java.lang.String,java.lang.String)[pri:3, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:29 IST" name="searchCarWashService" data-provider="getDataForCarWashing" finished-at="2025-07-09T15:45:39 IST" duration-ms="10149" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='react-autowhatever-city-auto-suggest--item-1']/a (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64420/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fdef27d2b662694624ded6b59ebfc16a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='react-autowhatever-city-auto-suggest--item-1']/a (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64420/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fdef27d2b662694624ded6b59ebfc16a
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at pageObjectModels.HomePage.locationSearch(HomePage.java:60)
-at testCases.TestCase.searchCarWashService(TestCase.java:29)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        </test-method> <!-- TC2 -->
+        <test-method signature="TC3()[pri:3, instance:testCases.TestSenario_1@3eb25e1a]" started-at="2025-07-10T15:41:33 IST" name="TC3" finished-at="2025-07-10T15:41:33 IST" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchCarWashService -->
-        <test-method signature="getCarWashingServiceandPhoneZZZZ()[pri:4, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:39 IST" name="getCarWashingServiceandPhoneZZZZ" finished-at="2025-07-09T15:45:41 IST" duration-ms="1937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getCarWashingServiceandPhoneZZZZ -->
-        <test-method signature="freeListingValidation(java.lang.String)[pri:5, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:41 IST" name="freeListingValidation" data-provider="getDataForFreeListing" finished-at="2025-07-09T15:45:44 IST" duration-ms="2353" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[876716789]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- freeListingValidation -->
-        <test-method signature="freeListingValidation(java.lang.String)[pri:5, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:44 IST" name="freeListingValidation" data-provider="getDataForFreeListing" finished-at="2025-07-09T15:45:54 IST" duration-ms="10054" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="__next"]/section/div[1]/a[1]"}
-  (Session info: chrome=137.0.7151.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fdef27d2b662694624ded6b59ebfc16a, findElement {using=xpath, value=//*[@id="__next"]/section/div[1]/a[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64420/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fdef27d2b662694624ded6b59ebfc16a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="__next"]/section/div[1]/a[1]"}
-  (Session info: chrome=137.0.7151.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fdef27d2b662694624ded6b59ebfc16a, findElement {using=xpath, value=//*[@id="__next"]/section/div[1]/a[1]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64420}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64420/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fdef27d2b662694624ded6b59ebfc16a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-at pageObjectModels.HomePage.openFreeListing(HomePage.java:73)
-at testCases.TestCase.freeListingValidation(TestCase.java:46)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- freeListingValidation -->
-        <test-method signature="getGymSubMenuList()[pri:6, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:54 IST" name="getGymSubMenuList" finished-at="2025-07-09T15:45:57 IST" duration-ms="3250" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getGymSubMenuList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TestCase@233795b6]" started-at="2025-07-09T15:45:57 IST" name="tearDown" finished-at="2025-07-09T15:45:58 IST" duration-ms="1209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TestCase -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- TC3 -->
+      </class> <!-- testCases.TestSenario_1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
