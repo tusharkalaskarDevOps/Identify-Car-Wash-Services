@@ -24,7 +24,7 @@ public class BaseTest {
 		
 		Properties p =  new Properties();
 		try {
-			FileInputStream fis = new FileInputStream("C:\\Users\\2407425\\eclipse-workspace\\zzHackthon_Project\\src\\test\\resources\\config.properties");
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
 			p.load(fis);
 		}catch(Exception e) {
 			
@@ -53,10 +53,10 @@ public class BaseTest {
 	}
 	
 	
-//	@AfterClass
-//	public void tearDown() {
-//		driver.quit();
-//	}
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
 }
 
 
