@@ -24,10 +24,10 @@ public class BaseTest {
 		
 		Properties p =  new Properties();
 		try {
-			FileInputStream fis = new FileInputStream("C:\\Users\\2407425\\eclipse-workspace\\zzHackthon_Project\\src\\test\\resources\\config.properties");
-			p.load(fis);
+			FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
+			p.load(file);
 		}catch(Exception e) {
-			
+
 		}
 		baseUrl = p.getProperty("url");
 //		fileName = p.getProperty("file");
