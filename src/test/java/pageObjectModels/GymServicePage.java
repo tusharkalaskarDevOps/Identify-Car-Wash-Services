@@ -26,7 +26,60 @@ public class GymServicePage extends BasePage{
 	
 	@FindBy(xpath="*//ul[@id=\"filter_ul\"]/li")
 	public List<WebElement> gymSubMenu;
-	
+
+	@FindBy(xpath="//div[text()='Sort by']")
+	public WebElement sortBy;
+
+	@FindBy(xpath = "//*[text()='Relevance']")
+	public WebElement relevance;
+
+	@FindBy(xpath = "//*[text()='Rating']")
+	public WebElement sortByrating;
+
+	@FindBy(xpath="//li[@role='presentation']")
+	public List<WebElement> ratingList;
+
+	@FindBy(xpath = "//address/div/div[2]")
+	public List<WebElement> relevenceList;
+
+	@FindBy(xpath="//nav/ul/li[2]/button")
+	public WebElement amenitiesFilter;
+
+	@FindBy(xpath="//li[@id='option-0']")
+	public WebElement sundayAmenitiesFilter;
+
+	@FindBy(xpath="//label[@for='Locker Facility']")
+	public WebElement lockerAmenitiesFilter;
+
+	@FindBy(xpath = "//li[text()='Locker Facility']")
+	public List<WebElement> lockerList;
+
+	@FindBy(xpath = "//button[text()='Apply']")
+	public WebElement applyButton;
+
+
+	@FindBy(xpath = "//div[text()='Clear']")
+	public WebElement clearButton;
+
+	@FindBy(xpath = "//button[.//div[text()='Open Now']]")
+	public WebElement openNow;
+
+	@FindBy(xpath = "//*[@id=\"filter_ul\"]/li[4]/button/div[2]")
+	public WebElement topRated;
+
+	@FindBy(xpath = "//button[.//div[text()='Quick Response']]")
+	public WebElement quickResponse;
+
+	@FindBy(xpath = "//button[.//div[text()='Jd Verified']]")
+	public WebElement jdVerified;
+
+	@FindBy(xpath = "//button[.//div[text()='Deals']]")
+	public WebElement deals;
+
+	@FindBy(xpath = "//button[.//div[text()='Jd Trust']]")
+	public WebElement jdTrust;
+
+
 	//By Variables
 	By submenu=By.xpath("*//ul[@id=\"filter_ul\"]/li");
 	
