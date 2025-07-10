@@ -13,7 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtils {
 	
 	public static String[][] readExcelForCarWashing() throws IOException {
-		FileInputStream file=new FileInputStream("C:\\Users\\2407425\\eclipse-workspace\\zzHackthon_Project\\ExcelData\\inputExcel.xlsx");
+		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"ExcelData\\\\inputExcel.xlsx");
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		XSSFSheet sheet=workbook.getSheet("Sheet1");
 		
@@ -35,7 +35,7 @@ public class ExcelUtils {
 	}
 	
 	public static String[][] readExcelForFreeListing() throws IOException {
-		FileInputStream file=new FileInputStream("C:\\Users\\2407425\\eclipse-workspace\\zzHackthon_Project\\ExcelData\\inputExcel.xlsx");
+		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"ExcelData\\\\inputExcel.xlsx");
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		XSSFSheet sheet=workbook.getSheet("Sheet2");
 		
