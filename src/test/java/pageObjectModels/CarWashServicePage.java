@@ -67,12 +67,10 @@ public class CarWashServicePage extends BasePage{
 			customersRating.add(rating.get(i).getText());
 //			phnBtn.get(i).click();
 		}
-		System.out.println("43");
 		for(int j=0;j<5;j++) {
 //			phoneNumbers.add(phnText.get(j).getText());
 			System.out.println("\n"+carWashsingServices.get(j)+"--------"+customersRating.get(j)+"----"+customersVotes.get(j));
 		}
-		System.out.println("44");
 	}
 	
 }
