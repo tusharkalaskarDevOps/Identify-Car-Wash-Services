@@ -35,7 +35,8 @@ public class ExcelUtils {
 	}
 	
 	public static String[][] readExcelForFreeListing() throws IOException {
-		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\ExcelData\\inputExcel.xlsx");		XSSFWorkbook workbook=new XSSFWorkbook(file);
+		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\ExcelData\\inputExcel.xlsx");		
+		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		XSSFSheet sheet=workbook.getSheet("Sheet2");
 		
 		int row_cnt = sheet.getLastRowNum();
