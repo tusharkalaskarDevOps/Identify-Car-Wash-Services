@@ -1,11 +1,8 @@
 package testCases;
-
 import java.io.IOException;
-
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import baseTest.BaseTest;
 import pageObjectModels.HomePage;
 
@@ -46,4 +43,5 @@ public class TestSenario_1 extends BaseTest{
 			Assert.assertFalse(false);
 		}
 	}
+	
 }
