@@ -50,7 +50,7 @@ public class HomePage extends BasePage{
 	
 	By sortBy=By.xpath("//*[@id=\"filter_ul\"]/li[1]/button/div[1]");
 	
-	By loginText = By.xpath("//*[@id=\"jdLgnbox\"]/div/div[2]/h2[2]");
+	By loginText = By.xpath("//*[@id=\"login-modal-title\"]/div[2]");
 	
 	By skipBtn = By.xpath("//*[@id=\"onCloseMobile\"]/a");
 	//Actions

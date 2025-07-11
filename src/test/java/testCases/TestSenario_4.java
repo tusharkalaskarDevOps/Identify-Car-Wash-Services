@@ -1,14 +1,16 @@
 package testCases;
 
-import baseTest.BaseTest;
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import baseTest.BaseTest;
 import pageObjectModels.GymServicePage;
 import pageObjectModels.HomePage;
-import java.time.Duration;
 
 public class TestSenario_4 extends BaseTest{
 
@@ -17,18 +19,19 @@ public class TestSenario_4 extends BaseTest{
 
         System.out.println("Starting Test - TC14...");
         HomePage homePage = new HomePage(driver);
-        homePage.closePopUp(); // Call the closePopUp method
-        System.out.println("PopUp closed successfully.");
+//        homePage.closePopUp(); // Call the closePopUp method
+//        System.out.println("PopUp closed successfully.");
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.clickGymMenu(); // Navigate to the Gym option
         System.out.println("Gym Page Opens with Listings...");
+        
+		homePage.locationSearch("Chennai"); //Giving Location Name in Search Input
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.titleIs("Top Gyms in Sirucheri, Chennai - Best Fitness Centers near me - Justdial"));
         String title1 =  driver.getTitle();
         Assert.assertEquals(title1,"Top Gyms in Sirucheri, Chennai - Best Fitness Centers near me - Justdial");
     }
-
 
     @Test(priority = 2)
     public void TC15() {
