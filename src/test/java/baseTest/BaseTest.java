@@ -6,8 +6,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
 import driverSetup.DriverSetup;
@@ -19,7 +19,7 @@ public class BaseTest {
 //	public static String fileName;
 //	public static String sheetName;
 	
-	@BeforeClass
+	@BeforeTest
 	public WebDriver setUpDriver() {
 		
 		Properties p =  new Properties();
@@ -53,7 +53,7 @@ public class BaseTest {
 	}
 	
 	
-	@AfterClass
+	@AfterTest
 	public void tearDown() {
 		driver.quit();
 	}
