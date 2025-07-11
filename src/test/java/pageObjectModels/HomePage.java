@@ -36,8 +36,8 @@ public class HomePage extends BasePage{
 	@FindBy(xpath="//*[@id=\"srchbtn\"]")
 	WebElement searchBtn;
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/section/div[1]/a[1]")
-	WebElement freeListing;
+	@FindBy(xpath="//*[@id=\"home-page-container\"]/div[1]/a[1]")
+	public WebElement freeListing;
 	
 	//By variables
 	By popup=By.xpath("//*[@id=\"loginPop\"]/div/div[2]/div/div[4]/a");
@@ -48,6 +48,8 @@ public class HomePage extends BasePage{
 	
 	
 	//Actions
+	
+	
 	public void closePopUp() throws IOException {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(popup));
@@ -69,7 +71,13 @@ public class HomePage extends BasePage{
 		wait.until(ExpectedConditions.visibilityOfElementLocated(sortBy));
 	}
 	
+	//Method to Click on Free Listing Button
 	public void openFreeListing() {
 		freeListing.click();
+	}
+	
+	//Method to get the text of Free Listing Button
+	public String getFreeListingButtonText() {
+		return freeListing.getText();
 	}
 }

@@ -13,8 +13,10 @@ public class DriverSetup {
 		EdgeOptions options = new EdgeOptions();
 		if(driver == null) {
 			options.addArguments("--disable-blink-features=AutomationControlled");
+			options.addArguments("--remote-allow-origins=*");
 			driver = new EdgeDriver(options);
 		}
+		
 		
 		
 		return driver;

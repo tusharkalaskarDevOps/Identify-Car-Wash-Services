@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-11T11:54:37 IST" name="Suite" finished-at="2025-07-11T11:55:18 IST" duration-ms="41105">
+    <groups>
+    </groups>
+    <test started-at="2025-07-11T11:54:37 IST" name="Test" finished-at="2025-07-11T11:55:18 IST" duration-ms="41105">
+      <class name="testCases.TestSenario_3">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:testCases.TestSenario_3@72f926e6]" started-at="2025-07-11T11:54:37 IST" name="setUpDriver" finished-at="2025-07-11T11:55:03 IST" duration-ms="25793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="freeListing_Button()[pri:1, instance:testCases.TestSenario_3@72f926e6]" started-at="2025-07-11T11:55:03 IST" name="freeListing_Button" finished-at="2025-07-11T11:55:09 IST" duration-ms="6436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeListing_Button -->
+        <test-method signature="freeListing_Button_Click()[pri:2, instance:testCases.TestSenario_3@72f926e6]" started-at="2025-07-11T11:55:09 IST" name="freeListing_Button_Click" finished-at="2025-07-11T11:55:13 IST" duration-ms="3174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeListing_Button_Click -->
+        <test-method signature="freeListing_Mobile_TextField_invalid()[pri:3, instance:testCases.TestSenario_3@72f926e6]" started-at="2025-07-11T11:55:13 IST" name="freeListing_Mobile_TextField_invalid" finished-at="2025-07-11T11:55:14 IST" duration-ms="1044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeListing_Mobile_TextField_invalid -->
+        <test-method signature="freeListing_Mobile_TextField_valid()[pri:4, instance:testCases.TestSenario_3@72f926e6]" started-at="2025-07-11T11:55:14 IST" name="freeListing_Mobile_TextField_valid" finished-at="2025-07-11T11:55:17 IST" duration-ms="3024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeListing_Mobile_TextField_valid -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TestSenario_3@72f926e6]" started-at="2025-07-11T11:55:17 IST" name="tearDown" finished-at="2025-07-11T11:55:18 IST" duration-ms="1558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TestSenario_3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
