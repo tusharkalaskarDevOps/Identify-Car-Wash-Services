@@ -19,10 +19,11 @@ public class ExcelUtils {
 		
 		int row_cnt = sheet.getLastRowNum();
 		int cell_cnt = sheet.getRow(0).getLastCellNum();
-		String[][] data1 = new String[row_cnt][cell_cnt];
+		String[][] data1 = new String[row_cnt-1][cell_cnt];
+
 		DataFormatter df = new DataFormatter();
-		
-		for(int r=1; r<=row_cnt; r++) {
+		//make changes here for getting more dataset
+		for(int r=1; r<=row_cnt-1; r++) {
 			XSSFRow row = sheet.getRow(r);
 			for(int c=0; c<cell_cnt; c++) {
 				XSSFCell cell = row.getCell(c);

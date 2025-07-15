@@ -3,14 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testCases.TestCase">
+      <class name="testCases.TestSenario_4">
         <methods>
           <include name="setUpDriver"/>
-          <include name="searchCarWashService" invocation-numbers="1"/>
-          <include name="freeListingValidation" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="getGymSubMenuList"/>
+        </methods>
+      </class> <!-- testCases.TestSenario_4 -->
+      <class name="testCases.TestSenario_3">
+        <methods>
+          <include name="setUpDriver"/>
+          <include name="freeListing_Mobile_TextField_invalid"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.TestCase -->
+      </class> <!-- testCases.TestSenario_3 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
