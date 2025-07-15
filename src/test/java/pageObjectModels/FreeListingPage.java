@@ -28,7 +28,7 @@ public class FreeListingPage extends BasePage{
 	public WebElement phnSubmit;
 	
 	//Locating the error message
-	@FindBy(xpath="//*[@id=\"listyourbusiness\"]/div[1]/form/span[2]")
+	@FindBy(xpath="//*[@id=\"listyourbusiness\"]/div[1]/span[2]")
 	public WebElement errorMessage;
 	
 	@FindBy(xpath="//*[@id=\"__next\"]/div/div/header/div/div[1]/a/img")
@@ -38,7 +38,6 @@ public class FreeListingPage extends BasePage{
 	//Locating the otp message for validation
 	@FindBy(xpath="//*[@id=\"mainContent\"]/div[9]/div/div[2]/p[1]")
 	public WebElement otpFinder;
-	
 	
 	By crossOtp=By.xpath("//*[@id=\"mainContent\"]/div[9]/div/div[1]/button");
 	

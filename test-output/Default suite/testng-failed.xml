@@ -6,7 +6,7 @@
       <class name="testCases.TestSenario_3">
         <methods>
           <include name="setUpDriver"/>
-          <include name="freeListing_Mobile_TextField_invalid"/>
+          <include name="freeListing_Mobile_TextField_valid"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- testCases.TestSenario_3 -->
