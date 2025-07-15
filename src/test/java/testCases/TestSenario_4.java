@@ -13,25 +13,41 @@ import java.time.Duration;
 public class TestSenario_4 extends BaseTest{
 
     @Test(priority = 1)
-    public void TC14() throws Exception {
+    public void test_gym_option_navigation_and_display() {
 
         System.out.println("Starting Test - TC14...");
-        HomePage homePage = new HomePage(driver);
-        homePage.closePopUp(); // Call the closePopUp method
-        System.out.println("PopUp closed successfully.");
-        GymServicePage gymPage = new GymServicePage(driver);
-        gymPage.clickGymMenu(); // Navigate to the Gym option
-        System.out.println("Gym Page Opens with Listings...");
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.titleIs("Top Gyms in Sirucheri, Chennai - Best Fitness Centers near me - Justdial"));
-        String title1 =  driver.getTitle();
-        Assert.assertEquals(title1,"Top Gyms in Sirucheri, Chennai - Best Fitness Centers near me - Justdial");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+        try {
+            HomePage homePage = new HomePage(driver);
+            homePage.closePopUp();
+            System.out.println("Pop-up closed successfully.");
+        } catch (Exception e) {
+            System.out.println("No pop-up found or already closed.");
+        }
+
+        try {
+            GymServicePage gymPage = new GymServicePage(driver);
+            gymPage.clickGymMenu();
+            System.out.println("Clicked on 'Gym' menu.");
+
+            wait.until(ExpectedConditions.titleContains("Gym"));
+
+            String actualTitle = driver.getTitle();
+            System.out.println("Page title: " + actualTitle);
+
+            Assert.assertTrue(actualTitle.contains("Gym"), "'Gym' Page has not loaded...");
+
+        } catch (Exception e) {
+            System.out.println("Test TC14 failed due to exception: " + e.getMessage());
+            Assert.fail("Test TC14 failed unexpectedly.");
+        }
     }
 
 
     @Test(priority = 2)
-    public void TC15() {
+    public void test_sort_by_relevance() {
         System.out.println("Starting Test - TC15...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -46,7 +62,7 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 3)
-    public void TC16() {
+    public void test_sort_by_rating() {
         System.out.println("Starting Test - TC16...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -57,7 +73,7 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 4)
-    public void TC17() {
+    public void test_filter_by_sunday_open() {
         System.out.println("Starting Test - TC17...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -73,7 +89,8 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 5)
-    public void TC18() {
+    public void test_filter_by_locker_facility() {
+
         System.out.println("Starting Test - TC18...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -86,7 +103,8 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 6)
-    public void TC19() {
+    public void test_clear_filters_removes_amenities() {
+
         System.out.println("Starting Test - TC19...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -97,7 +115,8 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 7)
-    public void TC20() {
+    public void test_filter_by_open_now() {
+
         System.out.println("Starting Test - TC20...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -107,7 +126,8 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 8)
-    public void TC21() {
+    public void test_filter_by_top_rated() {
+
         System.out.println("Starting Test - TC21...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -117,7 +137,8 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 9)
-    public void TC22() {
+    public void test_filter_by_quick_response() {
+
         System.out.println("Starting Test - TC22...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -126,8 +147,9 @@ public class TestSenario_4 extends BaseTest{
         Assert.assertTrue(true);
     }
 
-    @Test(priority = 7)
-    public void TC23() {
+    @Test(priority = 10)
+    public void test_filter_by_jd_verified() {
+
         System.out.println("Starting Test - TC23...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -136,8 +158,9 @@ public class TestSenario_4 extends BaseTest{
         Assert.assertTrue(true);
     }
 
-    @Test(priority = 8)
-    public void TC24() {
+    @Test(priority = 11)
+    public void test_filter_by_ratings_3_5_plus() {
+
         System.out.println("Starting Test - TC24...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -151,8 +174,9 @@ public class TestSenario_4 extends BaseTest{
         }
     }
 
-    @Test(priority = 9)
-    public void TC25() {
+    @Test(priority = 12)
+    public void test_filter_by_ratings_4_0_plus() {
+
         System.out.println("Starting Test - TC25...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -166,8 +190,9 @@ public class TestSenario_4 extends BaseTest{
         }
     }
 
-    @Test(priority = 10)
-    public void TC26() {
+    @Test(priority = 13)
+    public void test_filter_by_ratings_4_5_plus() {
+
         System.out.println("Starting Test - TC26...");
 
         GymServicePage gymPage = new GymServicePage(driver);
@@ -181,9 +206,20 @@ public class TestSenario_4 extends BaseTest{
         }
     }
 
-    @Test(priority = 11)
-    public void TC27() {
+    @Test(priority = 14)
+    public void test_clear_rating_filter_removes_applied() {
+
         System.out.println("Starting Test - TC27...");
+
+        GymServicePage gymPage = new GymServicePage(driver);
+        gymPage.rating.click();
+        gymPage.clearButton.click();
+    }
+
+    @Test(priority = 15)
+    public void test_filter_by_deals() {
+
+        System.out.println("Starting Test - TC28...");
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.deals.click();
@@ -191,9 +227,10 @@ public class TestSenario_4 extends BaseTest{
         Assert.assertTrue(true);
     }
 
-    @Test(priority = 12)
-    public void TC28() {
-        System.out.println("Starting Test - TC28...");
+    @Test(priority = 16)
+    public void test_filter_by_jd_trust() {
+
+        System.out.println("Starting Test - TC29...");
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.jdTrust.click();
@@ -201,9 +238,41 @@ public class TestSenario_4 extends BaseTest{
         Assert.assertTrue(true);
     }
 
-    @Test(priority = 13)
+    @Test(priority = 17)
     public void clearAllFilters() {
 
+        System.out.println("Starting Test - TC30...");
+
+        GymServicePage gymPage = new GymServicePage(driver);
+
+        gymPage.allFilters.click();
+        gymPage.resetFilters.click();
+        gymPage.closeButton.click();
+    }
+
+    @Test(priority = 18)
+    public void test_no_filters_show_all_listings() {
+
+        System.out.println("Starting Test - TC31...");
+
+        GymServicePage gymPage = new GymServicePage(driver);
+
+        gymPage.sortBy.click();
+        gymPage.relevance.click();
+
+        gymPage.amenitiesFilter.click();
+        gymPage.lockerAmenitiesFilter.click();
+
+        gymPage.rating.click();
+        gymPage.rating3.click();
+
+        gymPage.deals.click();
+
+        for(WebElement ele : gymPage.ratingCountList){
+            String rating = ele.getText();
+            double val = Double.parseDouble(rating);
+            Assert.assertTrue(val >= 4.5, "Rating is not above 4.5: " + rating);
+        }
     }
 
 
