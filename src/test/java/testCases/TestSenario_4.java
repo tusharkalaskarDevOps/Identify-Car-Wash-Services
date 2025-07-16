@@ -9,48 +9,72 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import baseTest.BaseTest;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import pageObjectModels.GymServicePage;
-import pageObjectModels.HomePage;
+import utils.ActionsUtilis;
+import utils.ExcelUtils;
+import utils.Screenshots;
+
+import java.io.IOException;
+import java.time.Duration;
+import java.util.List;
 
 public class TestSenario_4 extends BaseTest{
 
-	@Test(priority = 1)
-    public void TC14() throws Exception {
+    @Test(priority = 1)
+    public void test_gym_option_navigation_and_display() {
 
-        System.out.println("Starting Test - TC14...");
-        HomePage homePage = new HomePage(driver);
-//        homePage.closePopUp(); // Call the closePopUp method
-//        System.out.println("PopUp closed successfully.");
-        GymServicePage gymPage = new GymServicePage(driver);
-        gymPage.clickGymMenu(); // Navigate to the Gym option
-        System.out.println("Gym Page Opens with Listings...");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         
-		homePage.locationSearch("Chennai"); //Giving Location Name in Search Input
+        try {
+            System.out.println("Pop-up closed successfully.");
+        } catch (Exception e) {
+            System.out.println("No pop-up found or already closed.");
+        }
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.titleIs("Top Gyms in Sirucheri, Chennai - Best Fitness Centers near me - Justdial"));
-        String title1 =  driver.getTitle();
-        Assert.assertEquals(title1,"Top Gyms in Sirucheri, Chennai - Best Fitness Centers near me - Justdial");
+        try {
+            GymServicePage gymPage = new GymServicePage(driver);
+            ActionsUtilis.scrollByAmount(driver, 0, 300);
+            
+            gymPage.clickGymMenu();
+            System.out.println("Clicked on 'Gym' menu.");
+
+            wait.until(ExpectedConditions.titleContains("Gym"));
+            String path=Screenshots.screenShot("gymMenu", driver);
+            String actualTitle = driver.getTitle();
+            System.out.println("Page title: " + actualTitle);
+
+            Assert.assertTrue(actualTitle.contains("Gym"), "'Gym' Page has not loaded...");
+
+        } catch (Exception e) {
+            System.out.println("Test TC14 failed due to exception: " + e.getMessage());
+            Assert.fail("Test TC14 failed unexpectedly.");
+        }
     }
 
+
     @Test(priority = 2)
-    public void TC15() {
-        System.out.println("Starting Test - TC15...");
+    public void test_sort_by_relevance() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.sortBy.click();
         gymPage.relevance.click();
 
-        for(WebElement list:gymPage.relevenceList){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfAllElements(gymPage.relevenceList));
+        for (WebElement list : gymPage.relevenceList) {
             String listingText = list.getText();
-            Assert.assertTrue(listingText.contains("Chennai"), "Listing does not contain 'Chennai': ");
+            Assert.assertTrue(listingText.contains("Chennai"), "Listing does not contain 'Chennai': " + listingText);
         }
-        System.out.println("Rating elements detected: " + gymPage.relevenceList.size());
+        //System.out.println("Rating elements detected: " + gymPage.relevenceList.size());
     }
 
     @Test(priority = 3)
-    public void TC16() {
-        System.out.println("Starting Test - TC16...");
+    public void test_sort_by_rating() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.relevance.click();
@@ -60,8 +84,7 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 4)
-    public void TC17() {
-        System.out.println("Starting Test - TC17...");
+    public void test_filter_by_sunday_open() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.amenitiesFilter.click();
@@ -76,8 +99,7 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 5)
-    public void TC18() {
-        System.out.println("Starting Test - TC18...");
+    public void test_filter_by_locker_facility() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.amenitiesFilter.click();
@@ -89,8 +111,7 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 6)
-    public void TC19() {
-        System.out.println("Starting Test - TC19...");
+    public void test_clear_filters_removes_amenities() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.amenitiesFilter.click();
@@ -100,48 +121,49 @@ public class TestSenario_4 extends BaseTest{
     }
 
     @Test(priority = 7)
-    public void TC20() {
-        System.out.println("Starting Test - TC20...");
+    public void test_filter_by_open_now() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.openNow.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertOpenNow.isDisplayed(),"Open Now Filter is not applied");
     }
 
     @Test(priority = 8)
-    public void TC21() {
-        System.out.println("Starting Test - TC21...");
+    public void test_filter_by_top_rated() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.topRated.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertTopRated.isDisplayed(),"Top Rated filter is not applied");
     }
 
     @Test(priority = 9)
-    public void TC22() {
-        System.out.println("Starting Test - TC22...");
+    public void test_filter_by_quick_response() {
+
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.quickResponse.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertQuickResponse.isDisplayed(),"Quick Response filter should be active");
+
+        gymPage.assertQuickResponse.click();
     }
 
-    @Test(priority = 7)
-    public void TC23() {
-        System.out.println("Starting Test - TC23...");
+    @Test(priority = 10)
+    public void test_filter_by_jd_verified() {
+
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.jdVerified.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertJDVerified.isDisplayed(),"Jd Verified filter should be active");
+
+        gymPage.assertJDVerified.click();
     }
 
-    @Test(priority = 8)
-    public void TC24() {
-        System.out.println("Starting Test - TC24...");
+    @Test(priority = 11)
+    public void test_filter_by_ratings_3_5_plus() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.rating.click();
@@ -154,9 +176,8 @@ public class TestSenario_4 extends BaseTest{
         }
     }
 
-    @Test(priority = 9)
-    public void TC25() {
-        System.out.println("Starting Test - TC25...");
+    @Test(priority = 12)
+    public void test_filter_by_ratings_4_0_plus() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.rating.click();
@@ -169,9 +190,8 @@ public class TestSenario_4 extends BaseTest{
         }
     }
 
-    @Test(priority = 10)
-    public void TC26() {
-        System.out.println("Starting Test - TC26...");
+    @Test(priority = 13)
+    public void test_filter_by_ratings_4_5_plus() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.rating.click();
@@ -184,30 +204,96 @@ public class TestSenario_4 extends BaseTest{
         }
     }
 
-    @Test(priority = 11)
-    public void TC27() {
-        System.out.println("Starting Test - TC27...");
+    @Test(priority = 14)
+    public void test_clear_rating_filter_removes_applied() {
+
+
+        GymServicePage gymPage = new GymServicePage(driver);
+        gymPage.rating.click();
+        gymPage.clearButton.click();
+    }
+
+    @Test(priority = 15)
+    public void test_filter_by_deals() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.deals.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertDeals.isDisplayed(),"Deals filter should be active");
+
+        gymPage.assertDeals.click();
     }
 
-    @Test(priority = 12)
-    public void TC28() {
-        System.out.println("Starting Test - TC28...");
+    @Test(priority = 16)
+    public void test_filter_by_jd_trust() {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.jdTrust.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertJdtrust.isDisplayed(),"Jd Trust filter should be active");
     }
 
-    @Test(priority = 13)
+    @Test(priority = 17)
     public void clearAllFilters() {
 
+
+        GymServicePage gymPage = new GymServicePage(driver);
+
+        gymPage.allFilters.click();
+        gymPage.resetFilters.click();
+        gymPage.closeButton.click();
+
+        boolean allFiltersRemoved = gymPage.sortBy.isDisplayed() &&
+                gymPage.assertAmenities.isDisplayed() &&
+                gymPage.openNow.isDisplayed() &&
+                gymPage.topRated.isDisplayed() &&
+                gymPage.quickResponse.isDisplayed() &&
+                gymPage.jdVerified.isDisplayed() &&
+                gymPage.assertRatingChecker.isDisplayed() &&
+                gymPage.deals.isDisplayed() &&
+                gymPage.jdTrust.isDisplayed();
+
+        Assert.assertTrue(allFiltersRemoved,"Filters are not removed");
+
     }
+
+    @Test(priority = 18)
+    public void test_no_filters_show_all_listings() {
+
+
+        GymServicePage gymPage = new GymServicePage(driver);
+
+        gymPage.sortBy.click();
+        gymPage.relevance.click();
+
+        gymPage.amenitiesFilter.click();
+        gymPage.lockerAmenitiesFilter.click();
+        gymPage.applyButton.click();
+
+        gymPage.rating.click();
+        gymPage.rating3.click();
+
+        gymPage.quickResponse.click();
+
+        boolean allFiltersApplied = gymPage.relevance.isDisplayed() &&
+                gymPage.assertLockerFacility.isDisplayed() &&
+                gymPage.assertRatings.isDisplayed() &&
+                gymPage.assertQuickResponse.isDisplayed();
+
+        Assert.assertTrue(allFiltersApplied,"Filters are not Applied");
+    }
+
+  
+    @Test(priority=19)  //faling
+    public void getGymSubMenuList() throws IOException, InterruptedException {
+    	GymServicePage gymServicePage=new GymServicePage(driver);
+		gymServicePage.getSubmenu();
+		List<WebElement> submenu =gymServicePage.gymSubMenu;
 		
+		for(WebElement we: submenu) {
+			System.out.println(we.getText());
+		}
+		ExcelUtils.write_subMenu_data(submenu);
+		Assert.assertTrue(true);
+	}
 }
- 

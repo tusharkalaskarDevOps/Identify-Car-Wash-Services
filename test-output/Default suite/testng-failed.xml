@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="testCases.TestSenario_4">
         <methods>
           <include name="setUpDriver"/>
@@ -10,6 +11,16 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- testCases.TestSenario_4 -->
+=======
+      <class name="testCases.TestSenario_2">
+        <methods>
+          <include name="verify_best_deal_filter"/>
+          <include name="setUpDriver"/>
+          <include name="verify_rating_filter_applied"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testCases.TestSenario_2 -->
+>>>>>>> main
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
