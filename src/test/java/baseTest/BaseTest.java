@@ -6,8 +6,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 
 import driverSetup.DriverSetup;
@@ -19,12 +19,13 @@ public class BaseTest {
 //	public static String fileName;
 //	public static String sheetName;
 	
-	@BeforeClass
+	@BeforeTest
 	public WebDriver setUpDriver() {
 		
 		Properties p =  new Properties();
 		try {
-			FileInputStream fis = new FileInputStream("C:\\Hackaton project\\Identify-Car-Wash-Services\\src\\test\\resources\\config.properties");
+
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
 			p.load(fis);
 		}catch(Exception e) {
 			
@@ -41,7 +42,7 @@ public class BaseTest {
 	}
 	
 	@DataProvider(name = "getDataForCarWashing")
-	public String[][] getDataForCarWashing() throws IOException{
+	public static String[][] getDataForCarWashing() throws IOException{
 		String[][] data1 = ExcelUtils.readExcelForCarWashing();
 		return data1;
 	}
@@ -53,7 +54,7 @@ public class BaseTest {
 	}
 	
 	
-	@AfterClass
+	@AfterTest
 	public void tearDown() {
 		driver.quit();
 	}

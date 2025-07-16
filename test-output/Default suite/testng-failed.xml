@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TestCase">
+      <class name="testCases.TestSenario_2">
         <methods>
+          <include name="verify_results_by_location"/>
+          <include name="search_car_washing_service_page_displayed"/>
+          <include name="verify_best_deal_filter"/>
           <include name="setUpDriver"/>
-          <include name="searchCarWashService" invocation-numbers="1"/>
-          <include name="freeListingValidation" invocation-numbers="0 1"/>
+          <include name="verify_search_result_details"/>
+          <include name="verify_rating_filter_applied"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.TestCase -->
+      </class> <!-- testCases.TestSenario_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,7 +2,6 @@ package pageObjectModels;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,12 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utils.ExcelUtils;
-import utils.Screenshots;
-
 public class FreeListingPage extends BasePage{
-	//Declaring Variables
-	public static String errorMessageText;
 	
 	//Constructor
 	public FreeListingPage(WebDriver driver) {
@@ -26,7 +20,8 @@ public class FreeListingPage extends BasePage{
 	//Locators
 	
 	//Locating PhoneNumber textfield
-	@FindBy(xpath="//*[@id=\"1\"]")
+
+	@FindBy(xpath="//*[@id='1']")  
 	WebElement phoneInput;
 	
 	//Locating submit button
@@ -34,17 +29,20 @@ public class FreeListingPage extends BasePage{
 	public WebElement phnSubmit;
 	
 	//Locating the error message
-	@FindBy(xpath="//*[@id=\"listyourbusiness\"]/div[1]/form/span[2]")
+
+	@FindBy(xpath="//*[@id=\"listyourbusiness\"]/div[1]/span[2]")
 	public WebElement errorMessage;
 	
-	//By Variables to use in the explicit wait
-	By errorMsg=By.xpath("//*[@id=\"listyourbusiness\"]/div[1]/form/span[2]");
+	@FindBy(xpath="//*[@id=\"__next\"]/div/div/header/div/div[1]/a/img")
+	public WebElement logo;
+
 	
 	//Locating the otp message for validation
 	@FindBy(xpath="//*[@id=\"mainContent\"]/div[9]/div/div[2]/p[1]")
 	public WebElement otpFinder;
 	
-			
+	By crossOtp=By.xpath("//*[@id=\"mainContent\"]/div[9]/div/div[1]/button");
+	
 	//Actions
 	
 	//Method for passing the wrong phone number and clicking on submit button
@@ -64,8 +62,8 @@ public class FreeListingPage extends BasePage{
 	public String captureErrorMessage() throws InterruptedException, IOException {
 		
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(errorMsg));
-		errorMessageText=errorMessage.getText();
+		wait.until(ExpectedConditions.visibilityOf(errorMessage));
+		String errorMessageText=errorMessage.getText();
 		System.out.println("\n"+errorMessageText+"\n");
 		return errorMessageText;
 	}
@@ -73,6 +71,11 @@ public class FreeListingPage extends BasePage{
 	//Method for clearing the Phone Number Textfield
 	public void clear() {
 		phoneInput.clear();
+
+	}
+	
+	public void crossOTP() {
+		driver.findElement(crossOtp).click();
 	}
 	
 }
