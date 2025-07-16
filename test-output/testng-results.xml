@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="19" passed="18" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -164,6 +165,166 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAllFilters -->
+=======
+<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-16T12:42:50 IST" name="Suite" finished-at="2025-07-16T12:43:43 IST" duration-ms="53405">
+    <groups>
+    </groups>
+    <test started-at="2025-07-16T12:42:50 IST" name="Test" finished-at="2025-07-16T12:43:43 IST" duration-ms="53405">
+      <class name="testCases.TestSenario_1">
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:testCases.TestSenario_1@477b4cdf]" started-at="2025-07-16T12:42:50 IST" name="setUpDriver" finished-at="2025-07-16T12:42:56 IST" duration-ms="6303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method signature="verify_justdial_website_access()[pri:1, instance:testCases.TestSenario_1@477b4cdf]" started-at="2025-07-16T12:42:56 IST" name="verify_justdial_website_access" description="To check if the Website &quot;justdial.com&quot; is opening" finished-at="2025-07-16T12:43:02 IST" duration-ms="6206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_justdial_website_access -->
+        <test-method signature="verify_login_page_navigation()[pri:2, instance:testCases.TestSenario_1@477b4cdf]" started-at="2025-07-16T12:43:02 IST" name="verify_login_page_navigation" description="To check whether the login page is open after clicking on loginandSignup button" finished-at="2025-07-16T12:43:02 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_page_navigation -->
+        <test-method signature="verify_homepage_elements_visibility()[pri:3, instance:testCases.TestSenario_1@477b4cdf]" started-at="2025-07-16T12:43:02 IST" name="verify_homepage_elements_visibility" description="To check whether the location box,search box,search button  are visible on home page or not." finished-at="2025-07-16T12:43:02 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_homepage_elements_visibility -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TestSenario_1@477b4cdf]" started-at="2025-07-16T12:43:42 IST" name="tearDown" finished-at="2025-07-16T12:43:43 IST" duration-ms="1180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TestSenario_1 -->
+      <class name="testCases.TestSenario_2">
+        <test-method signature="search_car_washing_service_page_displayed(java.lang.String,java.lang.String)[pri:1, instance:testCases.TestSenario_2@9d5509a]" started-at="2025-07-16T12:43:04 IST" name="search_car_washing_service_page_displayed" description="To verify that  after entring &quot;Car washing service&quot; and click on search icon,car wash page appear or not." data-provider="getDataForCarWashing" finished-at="2025-07-16T12:43:06 IST" duration-ms="2247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chennai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Car washing Services]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_car_washing_service_page_displayed -->
+        <test-method signature="verify_results_by_location()[pri:2, instance:testCases.TestSenario_2@9d5509a]" started-at="2025-07-16T12:43:06 IST" name="verify_results_by_location" description="To verify that after selecting the location near by the user,then result are according to location or not" finished-at="2025-07-16T12:43:06 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_results_by_location -->
+        <test-method signature="verify_search_result_details()[pri:3, instance:testCases.TestSenario_2@9d5509a]" started-at="2025-07-16T12:43:06 IST" name="verify_search_result_details" description="To verify that each search result contains service name, contact number, and other details" finished-at="2025-07-16T12:43:06 IST" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_search_result_details -->
+        <test-method signature="verify_rating_filter_applied()[pri:4, instance:testCases.TestSenario_2@9d5509a]" started-at="2025-07-16T12:43:06 IST" name="verify_rating_filter_applied" description="To verify that after Applying Filter for rating then all displayed services have rating 4+" finished-at="2025-07-16T12:43:13 IST" duration-ms="6173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_rating_filter_applied -->
+        <test-method signature="verify_best_deal_filter()[pri:5, instance:testCases.TestSenario_2@9d5509a]" started-at="2025-07-16T12:43:13 IST" name="verify_best_deal_filter" description="To verify whether &#039;BEST DEAL&#039; filter in search results page is working or not." finished-at="2025-07-16T12:43:13 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_best_deal_filter -->
+      </class> <!-- testCases.TestSenario_2 -->
+      <class name="testCases.TestSenario_3">
+        <test-method signature="freeListing_Button()[pri:1, instance:testCases.TestSenario_3@179ece50]" started-at="2025-07-16T12:43:13 IST" name="freeListing_Button" description="Test case for validating free listing button" finished-at="2025-07-16T12:43:15 IST" duration-ms="2638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeListing_Button -->
+        <test-method signature="freeListing_Button_Click()[pri:2, instance:testCases.TestSenario_3@179ece50]" started-at="2025-07-16T12:43:15 IST" name="freeListing_Button_Click" description="Test case for validating the free listing page" finished-at="2025-07-16T12:43:17 IST" duration-ms="1872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeListing_Button_Click -->
+        <test-method signature="freeListing_Mobile_TextField_invalid()[pri:3, instance:testCases.TestSenario_3@179ece50]" started-at="2025-07-16T12:43:17 IST" name="freeListing_Mobile_TextField_invalid" description="Test case for wrong number validation" finished-at="2025-07-16T12:43:18 IST" duration-ms="565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeListing_Mobile_TextField_invalid -->
+        <test-method signature="freeListing_Mobile_TextField_valid()[pri:4, instance:testCases.TestSenario_3@179ece50]" started-at="2025-07-16T12:43:18 IST" name="freeListing_Mobile_TextField_valid" description="Test case for correct number validations" finished-at="2025-07-16T12:43:21 IST" duration-ms="3596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- freeListing_Mobile_TextField_valid -->
+      </class> <!-- testCases.TestSenario_3 -->
+      <class name="testCases.TestSenario_4">
+        <test-method signature="test_gym_option_navigation_and_display()[pri:1, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:21 IST" name="test_gym_option_navigation_and_display" finished-at="2025-07-16T12:43:23 IST" duration-ms="1458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_gym_option_navigation_and_display -->
+        <test-method signature="test_sort_by_relevance()[pri:2, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:23 IST" name="test_sort_by_relevance" finished-at="2025-07-16T12:43:24 IST" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort_by_relevance -->
+        <test-method signature="test_sort_by_rating()[pri:3, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:24 IST" name="test_sort_by_rating" finished-at="2025-07-16T12:43:24 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort_by_rating -->
+        <test-method signature="test_filter_by_sunday_open()[pri:4, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:24 IST" name="test_filter_by_sunday_open" finished-at="2025-07-16T12:43:26 IST" duration-ms="1697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_sunday_open -->
+        <test-method signature="test_filter_by_locker_facility()[pri:5, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:26 IST" name="test_filter_by_locker_facility" finished-at="2025-07-16T12:43:27 IST" duration-ms="1199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_locker_facility -->
+        <test-method signature="test_clear_filters_removes_amenities()[pri:6, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:27 IST" name="test_clear_filters_removes_amenities" finished-at="2025-07-16T12:43:27 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_clear_filters_removes_amenities -->
+        <test-method signature="test_filter_by_open_now()[pri:7, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:27 IST" name="test_filter_by_open_now" finished-at="2025-07-16T12:43:29 IST" duration-ms="1330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_open_now -->
+        <test-method signature="test_filter_by_top_rated()[pri:8, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:29 IST" name="test_filter_by_top_rated" finished-at="2025-07-16T12:43:29 IST" duration-ms="684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_top_rated -->
+        <test-method signature="test_filter_by_quick_response()[pri:9, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:29 IST" name="test_filter_by_quick_response" finished-at="2025-07-16T12:43:30 IST" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_quick_response -->
+        <test-method signature="test_filter_by_jd_verified()[pri:10, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:30 IST" name="test_filter_by_jd_verified" finished-at="2025-07-16T12:43:32 IST" duration-ms="1645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_jd_verified -->
+        <test-method signature="test_filter_by_ratings_3_5_plus()[pri:11, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:32 IST" name="test_filter_by_ratings_3_5_plus" finished-at="2025-07-16T12:43:33 IST" duration-ms="1721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_ratings_3_5_plus -->
+        <test-method signature="test_filter_by_ratings_4_0_plus()[pri:12, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:33 IST" name="test_filter_by_ratings_4_0_plus" finished-at="2025-07-16T12:43:34 IST" duration-ms="987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_ratings_4_0_plus -->
+        <test-method signature="test_filter_by_ratings_4_5_plus()[pri:13, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:34 IST" name="test_filter_by_ratings_4_5_plus" finished-at="2025-07-16T12:43:36 IST" duration-ms="1208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_ratings_4_5_plus -->
+        <test-method signature="test_clear_rating_filter_removes_applied()[pri:14, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:36 IST" name="test_clear_rating_filter_removes_applied" finished-at="2025-07-16T12:43:36 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_clear_rating_filter_removes_applied -->
+        <test-method signature="test_filter_by_deals()[pri:15, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:36 IST" name="test_filter_by_deals" finished-at="2025-07-16T12:43:37 IST" duration-ms="1354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_deals -->
+        <test-method signature="test_filter_by_jd_trust()[pri:16, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:37 IST" name="test_filter_by_jd_trust" finished-at="2025-07-16T12:43:38 IST" duration-ms="1044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_filter_by_jd_trust -->
+        <test-method signature="clearAllFilters()[pri:17, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:38 IST" name="clearAllFilters" finished-at="2025-07-16T12:43:39 IST" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearAllFilters -->
+        <test-method signature="test_no_filters_show_all_listings()[pri:18, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:39 IST" name="test_no_filters_show_all_listings" finished-at="2025-07-16T12:43:41 IST" duration-ms="2487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_no_filters_show_all_listings -->
+        <test-method signature="getGymSubMenuList()[pri:19, instance:testCases.TestSenario_4@1a677343]" started-at="2025-07-16T12:43:41 IST" name="getGymSubMenuList" finished-at="2025-07-16T12:43:42 IST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getGymSubMenuList -->
+>>>>>>> main
       </class> <!-- testCases.TestSenario_4 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

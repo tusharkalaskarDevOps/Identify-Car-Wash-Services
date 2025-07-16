@@ -55,11 +55,7 @@ public class TestCase extends BaseTest{
 	@Test(priority=6)
 	public void getGymSubMenuList() throws IOException, InterruptedException {
 		GymServicePage gymServicePage=new GymServicePage(driver);
-		gymServicePage.openApp(); //Navigating to Home Page
-		System.out.println("Opening home page");
-//		Assert.assertEquals(gymServicePage.gymIcon.getText(), "Gym");
-		gymServicePage.clickGymMenu(); //Clicking Gym Icon
-		System.out.println("Clicking Gym Menu Icon");
+		gymServicePage.clickGymMenu();
 		gymServicePage.getSubmenu();
 		List<WebElement> submenu =gymServicePage.gymSubMenu;
 		

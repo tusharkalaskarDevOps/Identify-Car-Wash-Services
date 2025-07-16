@@ -24,8 +24,9 @@ public class HomePage extends BasePage{
 	//Locators
 	@FindBy(xpath="//*[@id=\"loginPop\"]/div/div[2]/div/div[4]/a")
 	WebElement popUp;
-	@FindBy(xpath="//*[@id='city-auto-sug']")
-	public WebElement locationInput;
+
+//	@FindBy(xpath="//*[@id='city-auto-sug']")
+//	public WebElement locationInput;
 
 	
 	@FindBy(xpath="//*[@id='react-autowhatever-city-auto-suggest--item-1']/a")
@@ -36,9 +37,11 @@ public class HomePage extends BasePage{
 	
 	@FindBy(xpath="//*[@id=\"srchbtn\"]")
 	public WebElement searchBtn;
+
 	
-	@FindBy(xpath="//*[@id=\"__next\"]/section/div[1]/a[1]")
-	WebElement freeListing;
+	@FindBy(xpath="//*[@id=\"home-page-container\"]/div[1]/a[1]")   
+	public WebElement freeListing;
+	
 	
 	@FindBy(xpath="//*[@id='header_login']")
 	public WebElement loginAndSignup;
@@ -53,6 +56,9 @@ public class HomePage extends BasePage{
 	By loginText = By.xpath("//*[@id=\"login-modal-title\"]/div[2]");
 	
 	By skipBtn = By.xpath("//*[@id=\"onCloseMobile\"]/a");
+
+	
+	public By locationInput = By.xpath("//*[@id='city-auto-sug']");
 	//Actions
 	
 	
@@ -63,7 +69,11 @@ public class HomePage extends BasePage{
 	}
 	
 	public void locationSearch(String loc) throws IOException {
-		locationInput.sendKeys(loc);
+		
+		WebDriverWait wait1=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait1.until(ExpectedConditions.visibilityOfElementLocated(locationInput));
+		driver.findElement(locationInput).sendKeys(loc);
+		
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(location));
 //		locationOpton.click();
@@ -88,5 +98,13 @@ public class HomePage extends BasePage{
 	public void skilLoginPage() {
 		driver.findElement(skipBtn).click();
 	}
+
+	//Method to get the text of Free Listing Button
+	public String getFreeListingButtonText() {
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(freeListing));
+		return freeListing.getText();
+	}
+
 	
 }
