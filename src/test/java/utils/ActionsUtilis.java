@@ -1,8 +1,8 @@
 package utils;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class ActionsUtilis {
@@ -12,8 +12,10 @@ public class ActionsUtilis {
 		act.sendKeys(Keys.ENTER);
 	}
 	
-	public static void scrollTo(WebDriver driver, WebElement ele) {
-		Actions act = new Actions(driver);
-		act.scrollToElement(ele);
+
+	public static void scrollByAmount(WebDriver driver, int x, int y) {
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("window.scrollBy(arguments[0], arguments[1])", x, y);
 	}
+
 }

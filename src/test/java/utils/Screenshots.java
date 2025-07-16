@@ -12,7 +12,7 @@ public class Screenshots {
 	public static String screenShot(String filename,WebDriver driver) throws IOException {
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		File trg=new File(System.getProperty("user.dir")+"\\screenshots\\"+filename+".png");
+		File trg=new File(System.getProperty("user.dir")+"\\screenShots\\"+filename+".png");
 		FileUtils.copyFile(src, trg);
 		return trg.getAbsolutePath();
 	}

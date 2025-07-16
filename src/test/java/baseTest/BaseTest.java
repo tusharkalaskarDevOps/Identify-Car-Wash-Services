@@ -41,7 +41,7 @@ public class BaseTest {
 	}
 	
 	@DataProvider(name = "getDataForCarWashing")
-	public String[][] getDataForCarWashing() throws IOException{
+	public static String[][] getDataForCarWashing() throws IOException{
 		String[][] data1 = ExcelUtils.readExcelForCarWashing();
 		return data1;
 	}

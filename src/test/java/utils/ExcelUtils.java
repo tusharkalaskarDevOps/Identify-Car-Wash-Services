@@ -1,5 +1,6 @@
 package utils;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
@@ -9,88 +10,172 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebElement;
 
 public class ExcelUtils {
 	
-	public static String[][] readExcelForCarWashing() throws IOException {
-		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\ExcelData\\inputExcel.xlsx");
-		XSSFWorkbook workbook=new XSSFWorkbook(file);
-		XSSFSheet sheet=workbook.getSheet("Sheet1");
+	public static FileInputStream file1;
+	public static XSSFWorkbook workbook1;
+	
+	public static String[][] readExcelForCarWashing(){
+		try {
+			file1 = new FileInputStream(System.getProperty("user.dir")+"\\ExcelData\\inputExcel.xlsx");
+			workbook1=new XSSFWorkbook(file1);
+	 
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		XSSFSheet sheet=workbook1.getSheet("Sheet1");
 		
 		int row_cnt = sheet.getLastRowNum();
 		int cell_cnt = sheet.getRow(0).getLastCellNum();
-		String[][] data1 = new String[row_cnt-1][cell_cnt];
-
+		String[][] data1 = new String[row_cnt][cell_cnt];
 		DataFormatter df = new DataFormatter();
 		//make changes here for getting more dataset
-		for(int r=1; r<=row_cnt-1; r++) {
+		for(int r=1; r<=row_cnt; r++) {
 			XSSFRow row = sheet.getRow(r);
 			for(int c=0; c<cell_cnt; c++) {
 				XSSFCell cell = row.getCell(c);
 				data1[r-1][c] =  df.formatCellValue(cell);
 			}
 		}
-		workbook.close();
-		file.close();
+		try {
+			workbook1.close();
+			file1.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		return data1;
 	}
 	
 	public static String[][] readExcelForFreeListing() throws IOException {
-		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\ExcelData\\inputExcel.xlsx");
-		XSSFWorkbook workbook=new XSSFWorkbook(file);
-		XSSFSheet sheet=workbook.getSheet("Sheet2");
 		
-		int row_cnt = sheet.getLastRowNum();
-		int cell_cnt = sheet.getRow(0).getLastCellNum();
+		XSSFSheet sheet1=workbook1.getSheet("Sheet2");
+		
+		int row_cnt = sheet1.getLastRowNum();
+		int cell_cnt = sheet1.getRow(0).getLastCellNum();
 		String[][] data2 = new String[row_cnt][cell_cnt];
 		DataFormatter df = new DataFormatter();
 		
 		for(int r=1; r<=row_cnt; r++) {
-			XSSFRow row = sheet.getRow(r);
+			XSSFRow row = sheet1.getRow(r);
 			for(int c=0; c<cell_cnt; c++) {
 				XSSFCell cell = row.getCell(c);
 				data2[r-1][c] =  df.formatCellValue(cell);
 			}
 		}
-		workbook.close();
-		file.close();
+		workbook1.close();
+		file1.close();
 		return data2;
 	}
 	
 	
 	//Will do it later
-	public static void writeExcel(List<String> carWashsingServices, List<String> phoneNumbers, List<String> customersRating, List<String> customersVotes, String errorMessageText, List<String> gymSubMenu) throws IOException {
+	public static XSSFWorkbook workbook2 = new XSSFWorkbook();
+	public static void write_car_washing_data(List<String> carWashsingServices, List<String>phoneNumbers , List<String>customersRating , List<String>customersVotes ) {
 		
-//		FileOutputStream file=new FileOutputStream("C:\\Users\\2407425\\eclipse-workspace\\zzHackthon_Project\\ExcelData\\outPutExcel.xlsx");
-//		XSSFWorkbook workbook=new XSSFWorkbook();
-//		XSSFSheet sheet=workbook.getSheet("Sheet1");
+		XSSFSheet sheet2 = null;
+		FileOutputStream file2 = null;
+		try {
+			file2=new FileOutputStream(System.getProperty("user.dir")+"\\ExcelData\\outPutExcel.xlsx");
+			sheet2=workbook2.createSheet("ResultData1");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-//		XSSFRow row1=sheet.createRow(2);
-//		row1.createCell(0).setCellValue("Top 5 Car Washing Services In Chennai");
-//		for(int i=1;i<6;i++) {
-//			XSSFRow row=sheet.createRow(i);
-//			row.createCell(0).setCellValue(carWashsingServices.get(i-1));
-//			row.createCell(1).setCellValue(phoneNumbers.get(i-1));
-//			row.createCell(2).setCellValue(customersRating.get(i-1));
-//			row.createCell(3).setCellValue(customersVotes.get(i-1));
-//		}
-//		
-//		XSSFRow row2=sheet.createRow(7);
-//		row2.createCell(0).setCellValue("Error Message While Entering Wrong Number");
-//		row2.createCell(1).setCellValue(errorMessageText);
-//		
-//		XSSFRow row3=sheet.createRow(9);
-//		row3.createCell(0).setCellValue("Submenu of Gym Menu");
-//		
-//		for(int i=10;i<gymSubMenu.size()+10;i++) {
-//			XSSFRow row=sheet.createRow(i);
-//			row.createCell(0).setCellValue(gymSubMenu.get(i-10));
-//		}
+		// Creating header of the excel sheet
+        XSSFRow header = sheet2.createRow(0);
+        // Creating cell and setting the cell value
+        header.createCell(0).setCellValue("Service Name");
+        header.createCell(1).setCellValue("Mobile Number");
+        header.createCell(2).setCellValue("Rating");
+        header.createCell(3).setCellValue("Voting");
 		
-//		workbook.write(file);
-//		workbook.close();
-//		file.close();
+		for(int i=1;i<6;i++) {
+			XSSFRow row=sheet2.createRow(i);
+			row.createCell(0).setCellValue(carWashsingServices.get(i-1));
+			row.createCell(1).setCellValue(phoneNumbers.get(i-1));
+			row.createCell(2).setCellValue(customersRating.get(i-1));
+			row.createCell(3).setCellValue(customersVotes.get(i-1));
+		}
+		
+		try {
+			workbook2.write(file2);
+//			workbook2.close();
+			file2.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
+	public static void write_error_message_ofFreeListing(String errorMsg) {
+		
+		XSSFSheet sheet2 = null;
+		FileOutputStream file2 = null;
+		try {
+			file2=new FileOutputStream(System.getProperty("user.dir")+"\\ExcelData\\outPutExcel.xlsx");
+			sheet2=workbook2.createSheet("ResultData2");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		// Creating header of the excel sheet
+        XSSFRow header = sheet2.createRow(0);
+        // Creating cell and setting the cell value
+        header.createCell(0).setCellValue("Error Message");
+        
+        XSSFRow row_msg = sheet2.createRow(1);
+        row_msg.createCell(0).setCellValue(errorMsg);
+        
+		try {
+			workbook2.write(file2);
+//			workbook2.close();
+			file2.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
 	
+	public static void write_subMenu_data(List<WebElement> subMenu) {
+		
+
+		XSSFSheet sheet2 = null;
+		FileOutputStream file2 = null;
+		try {
+			file2=new FileOutputStream(System.getProperty("user.dir")+"\\ExcelData\\outPutExcel.xlsx");
+			sheet2=workbook2.createSheet("ResultData3");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		// Creating header of the excel sheet
+        XSSFRow header = sheet2.createRow(0);
+        // Creating cell and setting the cell value
+        header.createCell(0).setCellValue("Gym SubMenus");
+        
+        for(int i=1;i<=subMenu.size();i++) {
+			XSSFRow row=sheet2.createRow(i);
+			row.createCell(0).setCellValue(subMenu.get(i-1).getText());
+		}
+        
+		try {
+			workbook2.write(file2);
+			workbook2.close();
+			file2.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
 }

@@ -13,8 +13,8 @@ public class TestSenario_1 extends BaseTest{
 	
 	//Login and sign up test cases
 	
-	//To check if the Website "justdial.com" is opening
-	@Test(priority=1)
+
+	@Test(priority=1, description = "To check if the Website \"justdial.com\" is opening")
 	public void verify_justdial_website_access() throws IOException {
 		HomePage hp = new HomePage(driver);
 		hp.closePopUp();
@@ -25,8 +25,7 @@ public class TestSenario_1 extends BaseTest{
 	}
 	
 	
-	//To check whether the login page is open after clicking on loginandSignup button
-	@Test(priority=2)
+	@Test(priority=2, description = "To check whether the login page is open after clicking on loginandSignup button")
 	public void verify_login_page_navigation() throws IOException {
 		HomePage hp = new HomePage(driver);
 		hp.loginAndSignup.click();
@@ -38,8 +37,7 @@ public class TestSenario_1 extends BaseTest{
 	}
 	
 	
-	//To check whether the location box,search box,search button  are visible on home page or not.
-	@Test(priority=3)
+	@Test(priority=3, description = "To check whether the location box,search box,search button  are visible on home page or not.")
 	public void verify_homepage_elements_visibility() throws IOException {
 		HomePage hp = new HomePage(driver);
 		String loc_field = driver.findElement(hp.locationInput).getAttribute("aria-controls");
@@ -52,8 +50,4 @@ public class TestSenario_1 extends BaseTest{
 		}
 		System.out.println("test login 3");
 	}
-	
-
-	
-	
 }

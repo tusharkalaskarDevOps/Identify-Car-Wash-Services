@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TestSenario_3">
+      <class name="testCases.TestSenario_2">
         <methods>
+          <include name="verify_best_deal_filter"/>
           <include name="setUpDriver"/>
-          <include name="freeListing_Mobile_TextField_valid"/>
+          <include name="verify_rating_filter_applied"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.TestSenario_3 -->
+      </class> <!-- testCases.TestSenario_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

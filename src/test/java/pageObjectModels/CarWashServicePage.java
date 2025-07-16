@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -15,13 +14,14 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.ExcelUtils;
+
 public class CarWashServicePage extends BasePage{
 	//Declaring the variables
 	public static List<String> carWashsingServices=new ArrayList<String>();
 	public static List<String> customersRating=new ArrayList<String>();
 	public static List<String> customersVotes=new ArrayList<String>();
 	public static List<String> phoneNumbers=new ArrayList<String>();
-	
 	public static List<String> service_locations=new ArrayList<String>();
 	
 	//Constructor
@@ -89,8 +89,6 @@ public class CarWashServicePage extends BasePage{
 					}
 					
 				});
-				
-				
 				phoneNumbers.add(phnText.getText());
 				skipMobilePopup.click();
 			}else {
@@ -98,11 +96,18 @@ public class CarWashServicePage extends BasePage{
 			}
 			
 		}
-		for(int j=0;j<5;j++) {
-//			phoneNumbers.add(phnText.get(j).getText());
-			System.out.println(carWashsingServices.get(j)+"-----"+phoneNumbers.get(j)+"---"+customersRating.get(j)+"----"+customersVotes.get(j));
+		ExcelUtils.write_car_washing_data(carWashsingServices, phoneNumbers, customersRating, customersVotes);
+
+		System.out.println("Service\t\t\t\tPhone Number\tRating\tVotes");
+		System.out.println("------------------------------------------------------");
+		for (int j = 0; j < 5; j++) {
+		    System.out.println(
+		        carWashsingServices.get(j) + "\t\t" +
+		        phoneNumbers.get(j) + "\t" +
+		        customersRating.get(j) + "\t" +
+		        customersVotes.get(j)
+		    );
 		}
-		System.out.println();
 	}
 	
 	public void searchCarWashService(String location, String serach_text) throws IOException, InterruptedException {
