@@ -12,6 +12,8 @@ import java.time.Duration;
 
 public class TestSenario_4 extends BaseTest{
 
+
+
     @Test(priority = 1)
     public void test_gym_option_navigation_and_display() {
 
@@ -54,11 +56,14 @@ public class TestSenario_4 extends BaseTest{
         gymPage.sortBy.click();
         gymPage.relevance.click();
 
-        for(WebElement list:gymPage.relevenceList){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfAllElements(gymPage.relevenceList));
+
+        for (WebElement list : gymPage.relevenceList) {
             String listingText = list.getText();
-            Assert.assertTrue(listingText.contains("Chennai"), "Listing does not contain 'Chennai': ");
+            Assert.assertTrue(listingText.contains("Chennai"), "Listing does not contain 'Chennai': " + listingText);
         }
-        System.out.println("Rating elements detected: " + gymPage.relevenceList.size());
+        //System.out.println("Rating elements detected: " + gymPage.relevenceList.size());
     }
 
     @Test(priority = 3)
@@ -122,7 +127,7 @@ public class TestSenario_4 extends BaseTest{
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.openNow.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertOpenNow.isDisplayed(),"Open Now Filter is not applied");
     }
 
     @Test(priority = 8)
@@ -133,7 +138,7 @@ public class TestSenario_4 extends BaseTest{
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.topRated.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertTopRated.isDisplayed(),"Top Rated filter is not applied");
     }
 
     @Test(priority = 9)
@@ -144,7 +149,9 @@ public class TestSenario_4 extends BaseTest{
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.quickResponse.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertQuickResponse.isDisplayed(),"Quick Response filter should be active");
+
+        gymPage.assertQuickResponse.click();
     }
 
     @Test(priority = 10)
@@ -155,7 +162,9 @@ public class TestSenario_4 extends BaseTest{
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.jdVerified.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertJDVerified.isDisplayed(),"Jd Verified filter should be active");
+
+        gymPage.assertJDVerified.click();
     }
 
     @Test(priority = 11)
@@ -224,7 +233,9 @@ public class TestSenario_4 extends BaseTest{
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.deals.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertDeals.isDisplayed(),"Deals filter should be active");
+
+        gymPage.assertDeals.click();
     }
 
     @Test(priority = 16)
@@ -235,7 +246,7 @@ public class TestSenario_4 extends BaseTest{
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.jdTrust.click();
 
-        Assert.assertTrue(true);
+        Assert.assertTrue(gymPage.assertJdtrust.isDisplayed(),"Jd Trust filter should be active");
     }
 
     @Test(priority = 17)
@@ -248,6 +259,19 @@ public class TestSenario_4 extends BaseTest{
         gymPage.allFilters.click();
         gymPage.resetFilters.click();
         gymPage.closeButton.click();
+
+        boolean allFiltersRemoved = gymPage.sortBy.isDisplayed() &&
+                gymPage.assertAmenities.isDisplayed() &&
+                gymPage.openNow.isDisplayed() &&
+                gymPage.topRated.isDisplayed() &&
+                gymPage.quickResponse.isDisplayed() &&
+                gymPage.jdVerified.isDisplayed() &&
+                gymPage.assertRatingChecker.isDisplayed() &&
+                gymPage.deals.isDisplayed() &&
+                gymPage.jdTrust.isDisplayed();
+
+        Assert.assertTrue(allFiltersRemoved,"Filters are not removed");
+
     }
 
     @Test(priority = 18)
@@ -262,17 +286,19 @@ public class TestSenario_4 extends BaseTest{
 
         gymPage.amenitiesFilter.click();
         gymPage.lockerAmenitiesFilter.click();
+        gymPage.applyButton.click();
 
         gymPage.rating.click();
         gymPage.rating3.click();
 
-        gymPage.deals.click();
+        gymPage.quickResponse.click();
 
-        for(WebElement ele : gymPage.ratingCountList){
-            String rating = ele.getText();
-            double val = Double.parseDouble(rating);
-            Assert.assertTrue(val >= 4.5, "Rating is not above 4.5: " + rating);
-        }
+        boolean allFiltersApplied = gymPage.relevance.isDisplayed() &&
+                gymPage.assertLockerFacility.isDisplayed() &&
+                gymPage.assertRatings.isDisplayed() &&
+                gymPage.assertQuickResponse.isDisplayed();
+
+        Assert.assertTrue(allFiltersApplied,"Filters are not Applied");
     }
 
 

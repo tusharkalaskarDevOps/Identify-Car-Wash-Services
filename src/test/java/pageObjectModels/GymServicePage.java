@@ -99,6 +99,40 @@ public class GymServicePage extends BasePage{
 	@FindBy(xpath = "//button[@id='side_menu_close']")
 	public WebElement closeButton;
 
+	@FindBy(xpath = "//span/span[text()='Jd Verified']")
+	public WebElement assertJDVerified;
+
+	@FindBy(xpath = "//span/span[text()='Quick Response']")
+	public WebElement assertQuickResponse;
+
+	@FindBy(xpath = "//span/span[text()='Top Rated']")
+	public WebElement assertTopRated;
+
+	@FindBy(xpath = "//span/span[text()='Open Now']")
+	public WebElement assertOpenNow;
+
+	@FindBy(xpath = "//span/span[text()='Deals']")
+	public WebElement assertDeals;
+
+	@FindBy(xpath = "//span/span[text()='Jd Trust']")
+	public WebElement assertJdtrust;
+
+	@FindBy(xpath = "//span/span[text()='Locker Facility']")
+	public WebElement assertLockerFacility;
+
+	@FindBy(xpath = "//span[text()='4.5+']")
+	public WebElement assertRatings;
+
+	@FindBy(xpath = "//span[text()='Amenities']")
+	public WebElement assertAmenities;
+
+	@FindBy(xpath = "//span[text()='Ratings']")
+	public WebElement assertRatingChecker;
+
+	@FindBy(xpath = "//span[text()='Open Now']")
+	public WebElement beforeOpenNowClick;
+
+
 
 	//By Variables
 	By submenu=By.xpath("*//ul[@id=\"filter_ul\"]/li");
