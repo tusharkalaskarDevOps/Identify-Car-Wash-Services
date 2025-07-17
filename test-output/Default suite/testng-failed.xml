@@ -3,24 +3,31 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="testCases.TestSenario_4">
         <methods>
+          <include name="test_filter_by_locker_facility"/>
+          <include name="test_filter_by_open_now"/>
+          <include name="test_filter_by_jd_verified"/>
           <include name="setUpDriver"/>
-          <include name="TC14"/>
+          <include name="test_sort_by_relevance"/>
+          <include name="test_clear_rating_filter_removes_applied"/>
+          <include name="test_no_filters_show_all_listings"/>
+          <include name="test_filter_by_deals"/>
+          <include name="test_clear_filters_removes_amenities"/>
+          <include name="test_filter_by_ratings_4_0_plus"/>
+          <include name="test_filter_by_top_rated"/>
+          <include name="test_gym_option_navigation_and_display"/>
+          <include name="test_filter_by_jd_trust"/>
+          <include name="test_filter_by_quick_response"/>
+          <include name="test_sort_by_rating"/>
+          <include name="clearAllFilters"/>
           <include name="tearDown"/>
+          <include name="test_filter_by_sunday_open"/>
+          <include name="getGymSubMenuList"/>
+          <include name="test_filter_by_ratings_3_5_plus"/>
+          <include name="test_filter_by_ratings_4_5_plus"/>
         </methods>
       </class> <!-- testCases.TestSenario_4 -->
-=======
-      <class name="testCases.TestSenario_2">
-        <methods>
-          <include name="verify_best_deal_filter"/>
-          <include name="setUpDriver"/>
-          <include name="verify_rating_filter_applied"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- testCases.TestSenario_2 -->
->>>>>>> main
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

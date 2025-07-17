@@ -1,0 +1,471 @@
+<html>
+<head>
+<title>TestNG:  firefoxtest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>firefoxtest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>28/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 17 10:10:47 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>69 seconds (69683 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TestSenario_4.test_sort_by_rating()'><b>test_sort_by_rating</b><br>Test class: testCases.TestSenario_4</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Relevance&apos;]&quot;}
+  (Session info: MicrosoftEdge=138.0.3351.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3fb8600638718760c87352a60ce5e218, findElement {using=xpath, value=//*[text()=&apos;Relevance&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60268}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\2407425\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.230.29.239:4444/ses..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fb8600638718760c87352a60ce5e218
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at testCases.TestSenario_4.test_sort_by_rating(TestSenario_4.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2121744549", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2121744549'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Relevance&apos;]&quot;}
+  (Session info: MicrosoftEdge=138.0.3351.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3fb8600638718760c87352a60ce5e218, findElement {using=xpath, value=//*[text()=&apos;Relevance&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60268}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\2407425\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.230.29.239:4444/ses..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fb8600638718760c87352a60ce5e218
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at testCases.TestSenario_4.test_sort_by_rating(TestSenario_4.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_jd_trust()'><b>test_filter_by_jd_trust</b><br>Test class: testCases.TestSenario_4</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button aria-labelledby=&quot;submenuId_0.4059361051768339_button submenuId_0.4059361051768339_span&quot; id=&quot;submenuId_0.4059361051768339_button&quot; role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;jsx-2394d511e76092fb resfilter_item gray_whitefill_animat &quot;&gt;...&lt;/button&gt; is not clickable at point (1130, 300). Other element would receive the click: &lt;button class=&quot;jsx-679474515 resfilter_item gray_whitefill_animat font15 color111 fw500 all_filter_container&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=138.0.3351.65)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3fb8600638718760c87352a60ce5e218, clickElement {id=f.3AD5F4F29A1B5F25F8DE732B6FC5C7FA.d.0B0F1B6F30A4B36BEACD5B363226EEE2.e.1312}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60268}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\2407425\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.230.29.239:4444/ses..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: MicrosoftEdge on Windows 11 (3fb8600638718760c87352a60ce5e218)] -&gt; xpath: //button[.//span[text()=&apos;Jd Trust&apos;]]]
+Session ID: 3fb8600638718760c87352a60ce5e218
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at testCases.TestSenario_4.test_filter_by_jd_trust(TestSenario_4.java:225)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10624116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace10624116'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button aria-labelledby=&quot;submenuId_0.4059361051768339_button submenuId_0.4059361051768339_span&quot; id=&quot;submenuId_0.4059361051768339_button&quot; role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;jsx-2394d511e76092fb resfilter_item gray_whitefill_animat &quot;&gt;...&lt;/button&gt; is not clickable at point (1130, 300). Other element would receive the click: &lt;button class=&quot;jsx-679474515 resfilter_item gray_whitefill_animat font15 color111 fw500 all_filter_container&quot;&gt;...&lt;/button&gt;
+  (Session info: MicrosoftEdge=138.0.3351.65)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3fb8600638718760c87352a60ce5e218, clickElement {id=f.3AD5F4F29A1B5F25F8DE732B6FC5C7FA.d.0B0F1B6F30A4B36BEACD5B363226EEE2.e.1312}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60268}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\2407425\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.230.29.239:4444/ses..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[RemoteWebDriver: MicrosoftEdge on Windows 11 (3fb8600638718760c87352a60ce5e218)] -&gt; xpath: //button[.//span[text()=&apos;Jd Trust&apos;]]]
+Session ID: 3fb8600638718760c87352a60ce5e218
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at testCases.TestSenario_4.test_filter_by_jd_trust(TestSenario_4.java:225)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_sort_by_relevance()'><b>test_sort_by_relevance</b><br>Test class: testCases.TestSenario_4</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Relevance&apos;]&quot;}
+  (Session info: MicrosoftEdge=138.0.3351.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3fb8600638718760c87352a60ce5e218, findElement {using=xpath, value=//*[text()=&apos;Relevance&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60268}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\2407425\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.230.29.239:4444/ses..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fb8600638718760c87352a60ce5e218
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at testCases.TestSenario_4.test_sort_by_relevance(TestSenario_4.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089317615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089317615'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Relevance&apos;]&quot;}
+  (Session info: MicrosoftEdge=138.0.3351.65)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3fb8600638718760c87352a60ce5e218, findElement {using=xpath, value=//*[text()=&apos;Relevance&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60268}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\2407425\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.230.29.239:4444/ses..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3fb8600638718760c87352a60ce5e218
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+	at testCases.TestSenario_4.test_sort_by_relevance(TestSenario_4.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_open_now()'><b>test_filter_by_open_now</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_1.verify_login_page_navigation()'><b>verify_login_page_navigation</b><br>Test class: testCases.TestSenario_1<br>Test method: To check whether the login page is open after clicking on loginandSignup button</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_1@3857f613</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.verify_best_deal_filter()'><b>verify_best_deal_filter</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify whether 'BEST DEAL' filter in search results page is working or not.</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_deals()'><b>test_filter_by_deals</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_sunday_open()'><b>test_filter_by_sunday_open</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.verify_rating_filter_applied()'><b>verify_rating_filter_applied</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify that after Applying Filter for rating then all displayed services have rating 4+</td>
+<td></td>
+<td>5</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_gym_option_navigation_and_display()'><b>test_gym_option_navigation_and_display</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_locker_facility()'><b>test_filter_by_locker_facility</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.verify_search_result_details()'><b>verify_search_result_details</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify that each search result contains service name, contact number, and other details</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.clearAllFilters()'><b>clearAllFilters</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_jd_verified()'><b>test_filter_by_jd_verified</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_3.freeListing_Button()'><b>freeListing_Button</b><br>Test class: testCases.TestSenario_3<br>Test method: Test case for validating free listing button</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_3@26794848</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_ratings_3_5_plus()'><b>test_filter_by_ratings_3_5_plus</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.verify_results_by_location()'><b>verify_results_by_location</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify that after selecting the location near by the user,then result are according to location or not</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_clear_rating_filter_removes_applied()'><b>test_clear_rating_filter_removes_applied</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.search_car_washing_service_page_displayed()'><b>search_car_washing_service_page_displayed</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify that  after entring "Car washing service" and click on search icon,car wash page appear or not.<br>Parameters: Chennai, Car washing Services</td>
+<td></td>
+<td>2</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.getGymSubMenuList()'><b>getGymSubMenuList</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_1.verify_justdial_website_access()'><b>verify_justdial_website_access</b><br>Test class: testCases.TestSenario_1<br>Test method: To check if the Website "justdial.com" is opening</td>
+<td></td>
+<td>4</td>
+<td>testCases.TestSenario_1@3857f613</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_no_filters_show_all_listings()'><b>test_no_filters_show_all_listings</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>2</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_3.freeListing_Mobile_TextField_valid()'><b>freeListing_Mobile_TextField_valid</b><br>Test class: testCases.TestSenario_3<br>Test method: Test case for correct number validations</td>
+<td></td>
+<td>3</td>
+<td>testCases.TestSenario_3@26794848</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_quick_response()'><b>test_filter_by_quick_response</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_3.freeListing_Button_Click()'><b>freeListing_Button_Click</b><br>Test class: testCases.TestSenario_3<br>Test method: Test case for validating the free listing page</td>
+<td></td>
+<td>2</td>
+<td>testCases.TestSenario_3@26794848</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_clear_filters_removes_amenities()'><b>test_clear_filters_removes_amenities</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_top_rated()'><b>test_filter_by_top_rated</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_1.verify_homepage_elements_visibility()'><b>verify_homepage_elements_visibility</b><br>Test class: testCases.TestSenario_1<br>Test method: To check whether the location box,search box,search button  are visible on home page or not.</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_1@3857f613</td></tr>
+<tr>
+<td title='testCases.TestSenario_3.freeListing_Mobile_TextField_invalid()'><b>freeListing_Mobile_TextField_invalid</b><br>Test class: testCases.TestSenario_3<br>Test method: Test case for wrong number validation</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_3@26794848</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_ratings_4_0_plus()'><b>test_filter_by_ratings_4_0_plus</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_ratings_4_5_plus()'><b>test_filter_by_ratings_4_5_plus</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+</table><p>
+</body>
+</html>

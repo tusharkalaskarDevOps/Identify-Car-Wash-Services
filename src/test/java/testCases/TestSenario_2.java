@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import baseTest.BaseTest;
 import pageObjectModels.CarWashServicePage;
-import pageObjectModels.HomePage;
 import utils.ActionsUtilis;
 import utils.Screenshots;
 
@@ -24,7 +23,7 @@ public class TestSenario_2 extends BaseTest{
 		try {
 			csp.searchCarWashService(location, searchText);
 			String actualTitle2 = csp.getTitle();
-			String path=Screenshots.screenShot("CarWashingPage", driver);
+			Screenshots.screenShot("CarWashingPage", driver);
 			
 			if(actualTitle2.contains("Top Car Washing Services")) {
 				Assert.assertTrue(true);
@@ -62,7 +61,7 @@ public class TestSenario_2 extends BaseTest{
 		try {
 			csp.getCarWashingServiceandPhone();
 			Assert.assertTrue(csp.isSortedOrNot());
-			String path=Screenshots.screenShot("ratingFilter", driver);
+			Screenshots.screenShot("ratingFilter", driver);
 
 		} catch (InterruptedException | IOException e) {
 			e.printStackTrace();

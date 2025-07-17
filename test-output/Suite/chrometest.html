@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>TestNG:  chrometest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>chrometest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 17 09:49:26 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>79 seconds (79837 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_locker_facility()'><b>test_filter_by_locker_facility</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>2</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_ratings_4_0_plus()'><b>test_filter_by_ratings_4_0_plus</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_3.freeListing_Button()'><b>freeListing_Button</b><br>Test class: testCases.TestSenario_3<br>Test method: Test case for validating free listing button</td>
+<td></td>
+<td>2</td>
+<td>testCases.TestSenario_3@26794848</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.verify_search_result_details()'><b>verify_search_result_details</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify that each search result contains service name, contact number, and other details</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_ratings_4_5_plus()'><b>test_filter_by_ratings_4_5_plus</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_clear_rating_filter_removes_applied()'><b>test_clear_rating_filter_removes_applied</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.clearAllFilters()'><b>clearAllFilters</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_1.verify_justdial_website_access()'><b>verify_justdial_website_access</b><br>Test class: testCases.TestSenario_1<br>Test method: To check if the Website "justdial.com" is opening</td>
+<td></td>
+<td>5</td>
+<td>testCases.TestSenario_1@3857f613</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_jd_trust()'><b>test_filter_by_jd_trust</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.verify_best_deal_filter()'><b>verify_best_deal_filter</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify whether 'BEST DEAL' filter in search results page is working or not.</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.verify_results_by_location()'><b>verify_results_by_location</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify that after selecting the location near by the user,then result are according to location or not</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_clear_filters_removes_amenities()'><b>test_clear_filters_removes_amenities</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_sort_by_rating()'><b>test_sort_by_rating</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_1.verify_login_page_navigation()'><b>verify_login_page_navigation</b><br>Test class: testCases.TestSenario_1<br>Test method: To check whether the login page is open after clicking on loginandSignup button</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_1@3857f613</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.getGymSubMenuList()'><b>getGymSubMenuList</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_1.verify_homepage_elements_visibility()'><b>verify_homepage_elements_visibility</b><br>Test class: testCases.TestSenario_1<br>Test method: To check whether the location box,search box,search button  are visible on home page or not.</td>
+<td></td>
+<td>0</td>
+<td>testCases.TestSenario_1@3857f613</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_sunday_open()'><b>test_filter_by_sunday_open</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>2</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_gym_option_navigation_and_display()'><b>test_gym_option_navigation_and_display</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_quick_response()'><b>test_filter_by_quick_response</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_3.freeListing_Mobile_TextField_valid()'><b>freeListing_Mobile_TextField_valid</b><br>Test class: testCases.TestSenario_3<br>Test method: Test case for correct number validations</td>
+<td></td>
+<td>5</td>
+<td>testCases.TestSenario_3@26794848</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_no_filters_show_all_listings()'><b>test_no_filters_show_all_listings</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>3</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_ratings_3_5_plus()'><b>test_filter_by_ratings_3_5_plus</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>2</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.verify_rating_filter_applied()'><b>verify_rating_filter_applied</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify that after Applying Filter for rating then all displayed services have rating 4+</td>
+<td></td>
+<td>9</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_sort_by_relevance()'><b>test_sort_by_relevance</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_top_rated()'><b>test_filter_by_top_rated</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_3.freeListing_Mobile_TextField_invalid()'><b>freeListing_Mobile_TextField_invalid</b><br>Test class: testCases.TestSenario_3<br>Test method: Test case for wrong number validation</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_3@26794848</td></tr>
+<tr>
+<td title='testCases.TestSenario_2.search_car_washing_service_page_displayed()'><b>search_car_washing_service_page_displayed</b><br>Test class: testCases.TestSenario_2<br>Test method: To verify that  after entring "Car washing service" and click on search icon,car wash page appear or not.<br>Parameters: Chennai, Car washing Services</td>
+<td></td>
+<td>4</td>
+<td>testCases.TestSenario_2@bcec361</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_jd_verified()'><b>test_filter_by_jd_verified</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>2</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_3.freeListing_Button_Click()'><b>freeListing_Button_Click</b><br>Test class: testCases.TestSenario_3<br>Test method: Test case for validating the free listing page</td>
+<td></td>
+<td>3</td>
+<td>testCases.TestSenario_3@26794848</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_deals()'><b>test_filter_by_deals</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+<tr>
+<td title='testCases.TestSenario_4.test_filter_by_open_now()'><b>test_filter_by_open_now</b><br>Test class: testCases.TestSenario_4</td>
+<td></td>
+<td>1</td>
+<td>testCases.TestSenario_4@55fe41ea</td></tr>
+</table><p>
+</body>
+</html>

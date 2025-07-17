@@ -9,18 +9,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import baseTest.BaseTest;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 import pageObjectModels.GymServicePage;
 import utils.ActionsUtilis;
 import utils.ExcelUtils;
 import utils.Screenshots;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
 
 public class TestSenario_4 extends BaseTest{
@@ -44,7 +38,7 @@ public class TestSenario_4 extends BaseTest{
             System.out.println("Clicked on 'Gym' menu.");
 
             wait.until(ExpectedConditions.titleContains("Gym"));
-            String path=Screenshots.screenShot("gymMenu", driver);
+            Screenshots.screenShot("gymMenu", driver);
             String actualTitle = driver.getTitle();
             System.out.println("Page title: " + actualTitle);
 
@@ -228,7 +222,10 @@ public class TestSenario_4 extends BaseTest{
     public void test_filter_by_jd_trust() {
 
         GymServicePage gymPage = new GymServicePage(driver);
-        gymPage.jdTrust.click();
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOf(gymPage.jdTrust));
+        
+		gymPage.jdTrust.click();
 
         Assert.assertTrue(gymPage.assertJdtrust.isDisplayed(),"Jd Trust filter should be active");
     }

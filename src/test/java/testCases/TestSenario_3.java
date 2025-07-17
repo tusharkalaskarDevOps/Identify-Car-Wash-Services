@@ -44,7 +44,7 @@ public class TestSenario_3 extends BaseTest{
 			String Actual_message = errormessage;
 			String Expected_messsage = "Please Enter a Valid Mobile Number"; 
 			ExcelUtils.write_error_message_ofFreeListing(errormessage);
-			String path=Screenshots.screenShot("errorMsg", driver);
+			Screenshots.screenShot("errorMsg", driver);
 			Assert.assertEquals(Actual_message,Expected_messsage);
 		}
 		catch(IOException e) {
@@ -61,7 +61,7 @@ public class TestSenario_3 extends BaseTest{
 		String otpMsg = freelistingpage.otpFinder.getText();
 		String actual_message = otpMsg;
 		String expected_messsage = "Enter the code sent to ";
-		String path=Screenshots.screenShot("otpPage", driver);
+		Screenshots.screenShot("otpPage", driver);
 		freelistingpage.crossOTP();
 		freelistingpage.logo.click();
 		if(actual_message.contains(expected_messsage)) {
