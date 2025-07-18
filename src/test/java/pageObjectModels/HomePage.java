@@ -22,28 +22,31 @@ public class HomePage extends BasePage{
 	}
 	
 	//Locators
+	
+	//for locating popup
 	@FindBy(xpath="//*[@id=\"loginPop\"]/div/div[2]/div/div[4]/a")
 	WebElement popUp;
 
 //	@FindBy(xpath="//*[@id='city-auto-sug']")
 //	public WebElement locationInput;
 
-	
+	//for location
 	@FindBy(xpath="//*[@id='react-autowhatever-city-auto-suggest--item-1']/a")
 	public WebElement locationOpton;
 	
+	//for searching textfield 
 	@FindBy(xpath="//*[@id='main-auto']")
 	public WebElement serviceInput;
 	
+	//search button
 	@FindBy(xpath="//*[@id=\"srchbtn\"]")
 	public WebElement searchBtn;
 
-	
-
+	//locating free listing button
 	@FindBy(xpath="//*[@id=\"home-page-container\"]/div[1]/a[1]")   
 	public WebElement freeListing;
 	
-	
+	//
 	@FindBy(xpath="//*[@id='header_login']")
 	public WebElement loginAndSignup;
 	
@@ -77,7 +80,7 @@ public class HomePage extends BasePage{
 		
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(location));
-//		locationOpton.click();
+		locationOpton.click();
 	}
 	
 	public void serviceSearch(String serach_text) throws IOException, InterruptedException {

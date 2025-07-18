@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjectModels.GymServicePage;
+import pageObjectModels.HomePage;
 import utils.ActionsUtilis;
 import utils.ExcelUtils;
 import utils.Screenshots;
@@ -29,16 +30,14 @@ public class TestSenario_4 extends BaseTest{
     public void test_gym_option_navigation_and_display() {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-        
-        try {
-            System.out.println("Pop-up closed successfully.");
-        } catch (Exception e) {
-            System.out.println("No pop-up found or already closed.");
-        }
+        HomePage hp = new HomePage(driver);
 
         try {
+      	hp.closePopUp();
             GymServicePage gymPage = new GymServicePage(driver);
             ActionsUtilis.scrollByAmount(driver, 0, 300);
+            Thread.sleep(3000);
+            
             
             gymPage.clickGymMenu();
             System.out.println("Clicked on 'Gym' menu.");

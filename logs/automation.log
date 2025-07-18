@@ -1,0 +1,191 @@
+2025-07-17 11:46:13 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 11:46:13 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 11:46:13 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 11:46:14 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 11:46:14 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 11:46:14 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 11:46:14 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 11:46:14 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 11:46:14 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 11:48:25 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 11:48:25 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 11:48:25 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 11:48:25 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 11:48:25 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 11:48:25 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 11:48:25 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 11:48:25 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 11:48:25 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 11:53:49 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 11:53:49 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 11:53:49 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 11:53:49 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 11:53:49 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 11:53:49 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 11:53:49 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 11:53:49 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 11:53:49 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 11:56:43 INFO  TestSenario_2:28 - Location and service name is provided
+2025-07-17 11:56:43 INFO  TestSenario_2:30 - Title of car washing page captured
+2025-07-17 11:56:43 INFO  TestSenario_2:32 - Screenshot of car washing page captured
+2025-07-17 11:56:43 INFO  TestSenario_2:36 - Car washing service page validated
+2025-07-17 11:56:43 INFO  TestSenario_2:56 - Validated that Location is set to Chennai
+2025-07-17 11:56:43 INFO  TestSenario_2:68 - page is scrolled
+2025-07-17 11:56:43 INFO  TestSenario_2:70 - Validated that the car service list is not empty
+2025-07-17 11:56:49 INFO  TestSenario_2:97 - Best deals test case is validated
+2025-07-17 12:28:16 INFO  TestSenario_2:29 - Popup closed successfully
+2025-07-17 12:28:19 INFO  TestSenario_2:31 - Location and car wash service provided
+2025-07-17 12:28:19 INFO  TestSenario_2:33 - Car wash service title captured
+2025-07-17 12:28:19 INFO  TestSenario_2:35 - Car wash service screenshot captured
+2025-07-17 12:28:19 INFO  TestSenario_2:39 - Car wash service title validated
+2025-07-17 12:28:19 INFO  TestSenario_2:58 - The location as Chennai is validated
+2025-07-17 12:28:19 INFO  TestSenario_2:66 - Car wash page scrolled
+2025-07-17 12:28:19 INFO  TestSenario_2:68 - service page is not empty
+2025-07-17 12:31:14 INFO  TestSenario_2:29 - Popup closed successfully
+2025-07-17 12:31:17 INFO  TestSenario_2:31 - Location and car wash service provided
+2025-07-17 12:31:17 INFO  TestSenario_2:33 - Car wash service title captured
+2025-07-17 12:31:17 INFO  TestSenario_2:35 - Car wash service screenshot captured
+2025-07-17 12:31:17 INFO  TestSenario_2:39 - Car wash service title validated
+2025-07-17 12:31:17 INFO  TestSenario_2:58 - The location as Chennai is validated
+2025-07-17 12:31:17 INFO  TestSenario_2:66 - Car wash page scrolled
+2025-07-17 12:31:17 INFO  TestSenario_2:68 - service page is not empty
+2025-07-17 12:50:43 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 12:50:43 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 12:50:43 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 12:50:43 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 12:50:43 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 12:50:43 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 12:50:43 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 12:50:43 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 12:50:43 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 12:51:24 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 12:51:24 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 12:51:24 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 12:51:24 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 12:51:25 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 12:51:25 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 12:51:25 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 12:51:25 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 12:51:25 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 12:55:00 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 12:55:00 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 12:55:00 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 12:55:01 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 12:55:01 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 12:55:01 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 12:55:01 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 12:55:01 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 12:55:01 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 12:55:31 INFO  TestSenario_2:29 - Popup closed successfully
+2025-07-17 12:55:33 INFO  TestSenario_2:31 - Location and car wash service provided
+2025-07-17 12:55:33 INFO  TestSenario_2:33 - Car wash service title captured
+2025-07-17 12:55:33 INFO  TestSenario_2:35 - Car wash service screenshot captured
+2025-07-17 12:55:33 INFO  TestSenario_2:39 - Car wash service title validated
+2025-07-17 12:55:33 INFO  TestSenario_2:58 - The location as Chennai is validated
+2025-07-17 12:55:34 INFO  TestSenario_2:66 - Car wash page scrolled
+2025-07-17 12:55:34 INFO  TestSenario_2:68 - service page is not empty
+2025-07-17 12:55:40 INFO  TestSenario_2:77 - Car washing service names, phone no, rating, votes are stored in lists
+2025-07-17 12:55:40 INFO  TestSenario_2:79 - Sorted is validated
+2025-07-17 12:55:40 INFO  TestSenario_2:81 - Screenshot of rating captured
+2025-07-17 12:55:40 INFO  TestSenario_2:94 - Arrived to Homepage
+2025-07-17 12:56:06 INFO  TestSenario_3:25 - Free Listing button is validated at homepage
+2025-07-17 12:56:08 INFO  TestSenario_3:34 - Free Listing button clicked
+2025-07-17 12:56:08 INFO  TestSenario_3:36 - Title of Free Listing page captured
+2025-07-17 12:56:08 INFO  TestSenario_3:40 - Free Listing page is validated
+2025-07-17 12:56:08 INFO  TestSenario_3:49 - Wrong Phone no is provided
+2025-07-17 12:56:08 INFO  TestSenario_3:52 - Error message is captured
+2025-07-17 12:56:09 INFO  TestSenario_3:56 - Error message is stored in excel sheet
+2025-07-17 12:56:09 INFO  TestSenario_3:59 - Error message is validated
+2025-07-17 12:56:10 INFO  TestSenario_3:73 - Valid Phone no is entered
+2025-07-17 12:59:59 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 12:59:59 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 12:59:59 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 12:59:59 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 13:00:00 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 13:00:00 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 13:00:00 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 13:00:00 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 13:00:00 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 13:01:20 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 13:01:20 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 13:01:20 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 13:01:20 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 13:01:21 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 13:01:21 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 13:01:21 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 13:01:21 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 13:01:21 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 13:02:11 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 13:02:11 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 13:02:11 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 13:02:11 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 13:02:11 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 13:02:11 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 13:02:11 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 13:02:11 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 13:02:11 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 13:04:25 INFO  TestSenario_2:29 - Popup closed successfully
+2025-07-17 13:04:28 INFO  TestSenario_2:31 - Location and car wash service provided
+2025-07-17 13:04:28 INFO  TestSenario_2:33 - Car wash service title captured
+2025-07-17 13:04:28 INFO  TestSenario_2:35 - Car wash service screenshot captured
+2025-07-17 13:04:28 INFO  TestSenario_2:39 - Car wash service title validated
+2025-07-17 13:04:29 INFO  TestSenario_2:58 - The location as Chennai is validated
+2025-07-17 13:04:29 INFO  TestSenario_2:66 - Car wash page scrolled
+2025-07-17 13:04:29 INFO  TestSenario_2:68 - service page is not empty
+2025-07-17 23:19:25 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 23:19:25 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 23:19:25 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 23:19:25 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 23:19:25 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 23:19:25 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 23:19:25 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 23:19:26 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 23:19:26 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 23:23:55 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 23:23:55 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 23:23:55 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 23:23:56 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 23:23:56 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 23:23:56 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 23:23:56 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 23:23:56 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 23:23:56 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 23:24:48 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 23:24:48 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 23:24:48 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 23:24:49 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 23:24:49 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 23:24:49 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 23:24:49 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 23:24:49 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 23:24:49 INFO  TestSenario_1:70 - Test case 3 passed
+2025-07-17 23:25:44 INFO  TestSenario_2:29 - Popup closed successfully
+2025-07-17 23:25:47 INFO  TestSenario_2:31 - Location and car wash service provided
+2025-07-17 23:25:47 INFO  TestSenario_2:33 - Car wash service title captured
+2025-07-17 23:25:47 INFO  TestSenario_2:35 - Car wash service screenshot captured
+2025-07-17 23:25:47 INFO  TestSenario_2:39 - Car wash service title validated
+2025-07-17 23:25:47 INFO  TestSenario_2:58 - The location as Chennai is validated
+2025-07-17 23:25:47 INFO  TestSenario_2:66 - Car wash page scrolled
+2025-07-17 23:25:47 INFO  TestSenario_2:68 - service page is not empty
+2025-07-17 23:25:53 INFO  TestSenario_2:77 - Car washing service names, phone no, rating, votes are stored in lists
+2025-07-17 23:25:53 INFO  TestSenario_2:79 - Sorted is validated
+2025-07-17 23:25:53 INFO  TestSenario_2:81 - Screenshot of rating captured
+2025-07-17 23:25:54 INFO  TestSenario_2:94 - Arrived to Homepage
+2025-07-17 23:30:28 INFO  TestSenario_3:25 - Free Listing button is validated at homepage
+2025-07-17 23:30:30 INFO  TestSenario_3:34 - Free Listing button clicked
+2025-07-17 23:30:30 INFO  TestSenario_3:36 - Title of Free Listing page captured
+2025-07-17 23:30:30 INFO  TestSenario_3:40 - Free Listing page is validated
+2025-07-17 23:30:30 INFO  TestSenario_3:49 - Wrong Phone no is provided
+2025-07-17 23:30:30 INFO  TestSenario_3:52 - Error message is captured
+2025-07-17 23:30:31 INFO  TestSenario_3:56 - Error message is stored in excel sheet
+2025-07-17 23:30:31 INFO  TestSenario_3:59 - Error message is validated
+2025-07-17 23:30:32 INFO  TestSenario_3:73 - Valid Phone no is entered
+2025-07-17 23:32:21 INFO  TestSenario_1:25 - PopUp closed
+2025-07-17 23:32:21 INFO  TestSenario_1:30 - Home page is validated
+2025-07-17 23:32:21 INFO  TestSenario_1:31 - Test case 1 passed
+2025-07-17 23:32:21 INFO  TestSenario_1:42 - login page is opened
+2025-07-17 23:32:21 INFO  TestSenario_1:45 - login page skiped
+2025-07-17 23:32:21 INFO  TestSenario_1:47 - login page is validated
+2025-07-17 23:32:21 INFO  TestSenario_1:49 - Test case 2 passed
+2025-07-17 23:32:21 INFO  TestSenario_1:64 - location and search field is validated
+2025-07-17 23:32:21 INFO  TestSenario_1:70 - Test case 3 passed

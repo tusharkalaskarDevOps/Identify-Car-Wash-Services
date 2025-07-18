@@ -13,15 +13,20 @@ import org.testng.annotations.DataProvider;
 import driverSetup.DriverSetup;
 import utils.ExcelUtils;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class BaseTest {
 	public static WebDriver driver;
 	public static String baseUrl;
+	public Logger logger;
 //	public static String fileName;
 //	public static String sheetName;
 	
 	@BeforeTest
 	public WebDriver setUpDriver() {
 		
+		logger = LogManager.getLogger(this.getClass());
 		Properties p =  new Properties();
 		try {
 

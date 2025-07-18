@@ -22,6 +22,7 @@ public class TestSenario_3 extends BaseTest{
 		String ExpectedText = "Free Listing";
 		
 		Assert.assertEquals(ActualText,ExpectedText);
+		logger.info("Free Listing button is validated at homepage");
 
 	}
 	
@@ -30,10 +31,13 @@ public class TestSenario_3 extends BaseTest{
 	public void freeListing_Button_Click() {
 		HomePage homepage = new HomePage(driver);
 		homepage.freeListing.click();
+		logger.info("Free Listing button clicked");
 		String ActualText = driver.getTitle();
+		logger.info("Title of Free Listing page captured");
 
 		
 		Assert.assertEquals(ActualText,"Unlock Business Growth | Get Listed for FREE on Justdial");
+		logger.info("Free Listing page is validated");
 	}
 	
 	
@@ -42,16 +46,21 @@ public class TestSenario_3 extends BaseTest{
 				
 		FreeListingPage freelistingpage = new FreeListingPage(driver);
 		freelistingpage.enterWrongPhn("123464645");
+		logger.info("Wrong Phone no is provided");
 		try{
 			String errormessage = freelistingpage.captureErrorMessage();
+			logger.info("Error message is captured");
 			String Actual_message = errormessage;
 			String Expected_messsage = "Please Enter a Valid Mobile Number"; 
 			ExcelUtils.write_error_message_ofFreeListing(errormessage);
+			logger.info("Error message is stored in excel sheet");
 			String path=Screenshots.screenShot("errorMsg", driver);
 			Assert.assertEquals(Actual_message,Expected_messsage);
+			logger.info("Error message is validated");
 		}
 		catch(IOException e) {
 			System.out.println("Exception is found");
+			logger.error("Error message test failed");
 		}	
 	}
 	
@@ -61,7 +70,9 @@ public class TestSenario_3 extends BaseTest{
 		FreeListingPage freelistingpage = new FreeListingPage(driver);
 		driver.navigate().refresh();
 		freelistingpage.enterCorrectPhn("8342310004");
+		logger.info("Valid Phone no is entered");
 		String otpMsg = freelistingpage.otpFinder.getText();
+		
 		String actual_message = otpMsg;
 		String expected_messsage = "Enter the code sent to ";
 		String path=Screenshots.screenShot("otpPage", driver);
@@ -69,8 +80,10 @@ public class TestSenario_3 extends BaseTest{
 		freelistingpage.logo.click();
 		if(actual_message.contains(expected_messsage)) {
 			Assert.assertTrue(true);
+			logger.info("Otp page validated");
 		}else {
 			Assert.assertTrue(false);
+			logger.error("Otp test case failed");
 		}
 	}
 }

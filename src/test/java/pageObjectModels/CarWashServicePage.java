@@ -22,6 +22,7 @@ public class CarWashServicePage extends BasePage{
 	public static List<String> customersRating=new ArrayList<String>();
 	public static List<String> customersVotes=new ArrayList<String>();
 	public static List<String> phoneNumbers=new ArrayList<String>();
+	
 	public static List<String> service_locations=new ArrayList<String>();
 	
 	//Constructor
@@ -111,16 +112,19 @@ public class CarWashServicePage extends BasePage{
 		}
 	}
 	
+	//providing the location and service name
 	public void searchCarWashService(String location, String serach_text) throws IOException, InterruptedException {
 		HomePage homePage=new HomePage(driver);
 		homePage.locationSearch(location); //Giving Location Name in Search Input
 		homePage.serviceSearch(serach_text); //Giving Service Name in Search Input
 	}
 	
+	//to get title of that particular page
 	public String getTitle() {
 		return driver.getTitle();
 	}
 	
+	//
 	public boolean check_location(String location) {
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(serviceName));
