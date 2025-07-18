@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">31 methods, 1 failed,   30 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TestSenario_4" class="method navigator-link" hash-for-method="test_filter_by_jd_trust">test_filter_by_jd_trust</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">31 methods,   31 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -163,6 +149,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TestSenario_4" class="method navigator-link" hash-for-method="test_filter_by_deals">test_filter_by_deals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TestSenario_4" class="method navigator-link" hash-for-method="test_filter_by_jd_trust">test_filter_by_jd_trust</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -227,7 +218,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TestSenario_4" class="method navigator-link" hash-for-method="test_sort_by_relevance">test_sort_by_relevance</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TestSenario_4" class="method navigator-link" hash-for-method="test_sort_by_relevance(Chennai, Car washing Services)">test_sort_by_relevance(Chennai, Car washing Services)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -277,45 +268,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testCases.TestSenario_4</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_filter_by_jd_trust">
-                  </a> <!-- test_filter_by_jd_trust -->
-                  <span class="method-name">test_filter_by_jd_trust</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button aria-labelledby=&quot;submenuId_0.27868095723181197_button submenuId_0.27868095723181197_span&quot; id=&quot;submenuId_0.27868095723181197_button&quot; role=&quot;button&quot; tabindex=&quot;0&quot; class=&quot;jsx-2394d511e76092fb resfilter_item gray_whitefill_animat &quot;&gt;...&lt;/button&gt; is not clickable at point (1127, 300). Other element would receive the click: &lt;button class=&quot;jsx-679474515 resfilter_item gray_whitefill_animat font15 color111 fw500 all_filter_container&quot;&gt;...&lt;/button&gt;
-  (Session info: MicrosoftEdge=138.0.3351.65)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [c8658a31a8ad05bb6be0a37387dd1d40, clickElement {id=f.0A6C6A2153E61760B0C8786C525A2F39.d.F45EB525CAA8790B2B8011C9856A23C2.e.1497}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.65, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:64600}, msedge: {msedgedriverVersion: 138.0.3351.65 (81e3782c3ab4..., userDataDir: C:\Users\2407425\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64600/devtoo..., se:cdpVersion: 138.0.3351.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: MicrosoftEdge on windows (c8658a31a8ad05bb6be0a37387dd1d40)] -&gt; xpath: //button[.//span[text()=&apos;Jd Trust&apos;]]]
-Session ID: c8658a31a8ad05bb6be0a37387dd1d40
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at testCases.TestSenario_4.test_filter_by_jd_trust(TestSenario_4.java:227)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -355,6 +307,13 @@ Session ID: c8658a31a8ad05bb6be0a37387dd1d40
                   <a name="test_filter_by_deals">
                   </a> <!-- test_filter_by_deals -->
                   <span class="method-name">test_filter_by_deals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_filter_by_jd_trust">
+                  </a> <!-- test_filter_by_jd_trust -->
+                  <span class="method-name">test_filter_by_jd_trust</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -443,9 +402,10 @@ Session ID: c8658a31a8ad05bb6be0a37387dd1d40
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_sort_by_relevance">
-                  </a> <!-- test_sort_by_relevance -->
+                  <a name="test_sort_by_relevance(Chennai, Car washing Services)">
+                  </a> <!-- test_sort_by_relevance(Chennai, Car washing Services) -->
                   <span class="method-name">test_sort_by_relevance</span>
+                  <span class="parameters">(Chennai,Car washing Services)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -598,7 +558,7 @@ Session ID: c8658a31a8ad05bb6be0a37387dd1d40
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;execution_env&quot; value=&quot;local&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.TestSenario_1&quot;/&gt;
@@ -676,132 +636,132 @@ data.addRows(31);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_rating_filter_applied')
 data.setCell(0, 2, 'testCases.TestSenario_2')
-data.setCell(0, 3, 6577);
+data.setCell(0, 3, 6675);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verify_justdial_website_access')
 data.setCell(1, 2, 'testCases.TestSenario_1')
-data.setCell(1, 3, 6070);
+data.setCell(1, 3, 6125);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'freeListing_Mobile_TextField_valid')
 data.setCell(2, 2, 'testCases.TestSenario_3')
-data.setCell(2, 3, 3817);
+data.setCell(2, 3, 3963);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test_no_filters_show_all_listings')
-data.setCell(3, 2, 'testCases.TestSenario_4')
-data.setCell(3, 3, 2586);
+data.setCell(3, 1, 'freeListing_Button_Click')
+data.setCell(3, 2, 'testCases.TestSenario_3')
+data.setCell(3, 3, 2698);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'freeListing_Button_Click')
-data.setCell(4, 2, 'testCases.TestSenario_3')
-data.setCell(4, 3, 2445);
+data.setCell(4, 1, 'search_car_washing_service_page_displayed')
+data.setCell(4, 2, 'testCases.TestSenario_2')
+data.setCell(4, 3, 2686);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'search_car_washing_service_page_displayed')
-data.setCell(5, 2, 'testCases.TestSenario_2')
-data.setCell(5, 3, 2241);
+data.setCell(5, 1, 'test_no_filters_show_all_listings')
+data.setCell(5, 2, 'testCases.TestSenario_4')
+data.setCell(5, 3, 1828);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'test_filter_by_jd_trust')
+data.setCell(6, 1, 'test_filter_by_ratings_3_5_plus')
 data.setCell(6, 2, 'testCases.TestSenario_4')
-data.setCell(6, 3, 1778);
+data.setCell(6, 3, 1464);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'test_gym_option_navigation_and_display')
+data.setCell(7, 1, 'test_filter_by_jd_verified')
 data.setCell(7, 2, 'testCases.TestSenario_4')
-data.setCell(7, 3, 1626);
+data.setCell(7, 3, 1456);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'test_filter_by_jd_verified')
+data.setCell(8, 1, 'test_filter_by_sunday_open')
 data.setCell(8, 2, 'testCases.TestSenario_4')
-data.setCell(8, 3, 1534);
+data.setCell(8, 3, 1344);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'test_filter_by_ratings_3_5_plus')
+data.setCell(9, 1, 'test_filter_by_locker_facility')
 data.setCell(9, 2, 'testCases.TestSenario_4')
-data.setCell(9, 3, 1528);
+data.setCell(9, 3, 1259);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'test_filter_by_sunday_open')
+data.setCell(10, 1, 'test_filter_by_deals')
 data.setCell(10, 2, 'testCases.TestSenario_4')
-data.setCell(10, 3, 1309);
+data.setCell(10, 3, 1232);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'test_filter_by_open_now')
-data.setCell(11, 2, 'testCases.TestSenario_4')
-data.setCell(11, 3, 1229);
+data.setCell(11, 1, 'freeListing_Button')
+data.setCell(11, 2, 'testCases.TestSenario_3')
+data.setCell(11, 3, 1202);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'test_filter_by_deals')
+data.setCell(12, 1, 'test_filter_by_jd_trust')
 data.setCell(12, 2, 'testCases.TestSenario_4')
-data.setCell(12, 3, 1220);
+data.setCell(12, 3, 1129);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'freeListing_Button')
-data.setCell(13, 2, 'testCases.TestSenario_3')
-data.setCell(13, 3, 1173);
+data.setCell(13, 1, 'test_filter_by_open_now')
+data.setCell(13, 2, 'testCases.TestSenario_4')
+data.setCell(13, 3, 1120);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'test_sort_by_relevance')
+data.setCell(14, 1, 'test_gym_option_navigation_and_display')
 data.setCell(14, 2, 'testCases.TestSenario_4')
 data.setCell(14, 3, 1054);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'test_filter_by_locker_facility')
+data.setCell(15, 1, 'test_sort_by_relevance')
 data.setCell(15, 2, 'testCases.TestSenario_4')
-data.setCell(15, 3, 1051);
+data.setCell(15, 3, 1044);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'test_filter_by_ratings_4_0_plus')
+data.setCell(16, 1, 'test_filter_by_quick_response')
 data.setCell(16, 2, 'testCases.TestSenario_4')
-data.setCell(16, 3, 971);
+data.setCell(16, 3, 901);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'test_filter_by_ratings_4_5_plus')
 data.setCell(17, 2, 'testCases.TestSenario_4')
-data.setCell(17, 3, 918);
+data.setCell(17, 3, 838);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'test_filter_by_top_rated')
+data.setCell(18, 1, 'test_filter_by_ratings_4_0_plus')
 data.setCell(18, 2, 'testCases.TestSenario_4')
-data.setCell(18, 3, 766);
+data.setCell(18, 3, 833);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'test_filter_by_quick_response')
+data.setCell(19, 1, 'test_filter_by_top_rated')
 data.setCell(19, 2, 'testCases.TestSenario_4')
-data.setCell(19, 3, 715);
+data.setCell(19, 3, 776);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'clearAllFilters')
 data.setCell(20, 2, 'testCases.TestSenario_4')
-data.setCell(20, 3, 584);
+data.setCell(20, 3, 587);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'getGymSubMenuList')
-data.setCell(21, 2, 'testCases.TestSenario_4')
-data.setCell(21, 3, 529);
+data.setCell(21, 1, 'freeListing_Mobile_TextField_invalid')
+data.setCell(21, 2, 'testCases.TestSenario_3')
+data.setCell(21, 3, 510);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'freeListing_Mobile_TextField_invalid')
-data.setCell(22, 2, 'testCases.TestSenario_3')
-data.setCell(22, 3, 437);
+data.setCell(22, 1, 'getGymSubMenuList')
+data.setCell(22, 2, 'testCases.TestSenario_4')
+data.setCell(22, 3, 388);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'verify_login_page_navigation')
-data.setCell(23, 2, 'testCases.TestSenario_1')
-data.setCell(23, 3, 292);
+data.setCell(23, 1, 'verify_results_by_location')
+data.setCell(23, 2, 'testCases.TestSenario_2')
+data.setCell(23, 3, 288);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'verify_results_by_location')
-data.setCell(24, 2, 'testCases.TestSenario_2')
-data.setCell(24, 3, 219);
+data.setCell(24, 1, 'verify_login_page_navigation')
+data.setCell(24, 2, 'testCases.TestSenario_1')
+data.setCell(24, 3, 267);
 data.setCell(25, 0, 25)
 data.setCell(25, 1, 'test_clear_filters_removes_amenities')
 data.setCell(25, 2, 'testCases.TestSenario_4')
-data.setCell(25, 3, 206);
+data.setCell(25, 3, 181);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'test_clear_rating_filter_removes_applied')
+data.setCell(26, 1, 'test_sort_by_rating')
 data.setCell(26, 2, 'testCases.TestSenario_4')
-data.setCell(26, 3, 186);
+data.setCell(26, 3, 167);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'test_sort_by_rating')
+data.setCell(27, 1, 'test_clear_rating_filter_removes_applied')
 data.setCell(27, 2, 'testCases.TestSenario_4')
-data.setCell(27, 3, 172);
+data.setCell(27, 3, 154);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'verify_homepage_elements_visibility')
 data.setCell(28, 2, 'testCases.TestSenario_1')
-data.setCell(28, 3, 114);
+data.setCell(28, 3, 85);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'verify_best_deal_filter')
 data.setCell(29, 2, 'testCases.TestSenario_2')
-data.setCell(29, 3, 62);
+data.setCell(29, 3, 77);
 data.setCell(30, 0, 30)
 data.setCell(30, 1, 'verify_search_result_details')
 data.setCell(30, 2, 'testCases.TestSenario_2')
-data.setCell(30, 3, 28);
+data.setCell(30, 3, 60);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 42 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -856,150 +816,148 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TestSenario_1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setUpDriver(windows, edge, local)</span>
+                <span class="method-name">setUpDriver(windows, chrome, local)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verify_justdial_website_access</span>
-                <span class="method-start">8535 ms</span>
+                <span class="method-start">7919 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_login_page_navigation</span>
-                <span class="method-start">14622 ms</span>
+                <span class="method-start">14058 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_homepage_elements_visibility</span>
-                <span class="method-start">14917 ms</span>
+                <span class="method-start">14328 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TestSenario_2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">search_car_washing_service_page_displayed(Chennai, Car washing Services)</span>
-                <span class="method-start">16018 ms</span>
+                <span class="method-start">15041 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_results_by_location</span>
-                <span class="method-start">18261 ms</span>
+                <span class="method-start">17729 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_search_result_details</span>
-                <span class="method-start">18481 ms</span>
+                <span class="method-start">18021 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_rating_filter_applied</span>
-                <span class="method-start">18510 ms</span>
+                <span class="method-start">18083 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_best_deal_filter</span>
-                <span class="method-start">25089 ms</span>
+                <span class="method-start">24760 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TestSenario_3</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">freeListing_Button</span>
-                <span class="method-start">25153 ms</span>
+                <span class="method-start">24839 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">freeListing_Button_Click</span>
-                <span class="method-start">26327 ms</span>
+                <span class="method-start">26042 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">freeListing_Mobile_TextField_invalid</span>
-                <span class="method-start">28775 ms</span>
+                <span class="method-start">28742 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">freeListing_Mobile_TextField_valid</span>
-                <span class="method-start">29214 ms</span>
+                <span class="method-start">29256 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TestSenario_4</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">test_gym_option_navigation_and_display</span>
-                <span class="method-start">33036 ms</span>
+                <span class="method-start">33220 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">test_sort_by_relevance</span>
-                <span class="method-start">34663 ms</span>
+                <span class="method-name">test_sort_by_relevance(Chennai, Car washing Services)</span>
+                <span class="method-start">34327 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_sort_by_rating</span>
-                <span class="method-start">35718 ms</span>
+                <span class="method-start">35372 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_sunday_open</span>
-                <span class="method-start">35892 ms</span>
+                <span class="method-start">35543 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_locker_facility</span>
-                <span class="method-start">37204 ms</span>
+                <span class="method-start">36890 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_clear_filters_removes_amenities</span>
-                <span class="method-start">38258 ms</span>
+                <span class="method-start">38151 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_open_now</span>
-                <span class="method-start">38469 ms</span>
+                <span class="method-start">38334 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_top_rated</span>
-                <span class="method-start">39699 ms</span>
+                <span class="method-start">39456 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_quick_response</span>
-                <span class="method-start">40466 ms</span>
+                <span class="method-start">40233 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_jd_verified</span>
-                <span class="method-start">41183 ms</span>
+                <span class="method-start">41136 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_ratings_3_5_plus</span>
-                <span class="method-start">42720 ms</span>
+                <span class="method-start">42596 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_ratings_4_0_plus</span>
-                <span class="method-start">44249 ms</span>
+                <span class="method-start">44061 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_ratings_4_5_plus</span>
-                <span class="method-start">45221 ms</span>
+                <span class="method-start">44894 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_clear_rating_filter_removes_applied</span>
-                <span class="method-start">46140 ms</span>
+                <span class="method-start">45733 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_filter_by_deals</span>
-                <span class="method-start">46327 ms</span>
+                <span class="method-start">45889 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">test_filter_by_jd_trust</span>
-                <span class="method-start">47550 ms</span>
+                <span class="method-start">47122 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">clearAllFilters</span>
-                <span class="method-start">49501 ms</span>
+                <span class="method-start">48252 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_no_filters_show_all_listings</span>
-                <span class="method-start">50087 ms</span>
+                <span class="method-start">48840 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getGymSubMenuList</span>
-                <span class="method-start">52674 ms</span>
+                <span class="method-start">50670 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TestSenario_1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53204 ms</span>
+                <span class="method-start">51059 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

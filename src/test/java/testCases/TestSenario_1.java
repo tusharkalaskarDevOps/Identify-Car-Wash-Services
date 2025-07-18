@@ -20,9 +20,12 @@ public class TestSenario_1 extends BaseTest{
 	public void verify_justdial_website_access() throws IOException {
 		HomePage hp = new HomePage(driver);
 		hp.closePopUp();
+		logger.info("PopUp closed");
 		String title1 = driver.getTitle();
 		
-		Assert.assertEquals(title1, "Find Businesses Near You on Local Search Engine - Justdial");	
+		Assert.assertEquals(title1, "Find Businesses Near You on Local Search Engine - Justdial");
+		logger.info("Home page is validated");
+		logger.info("Test case 1 passed");
 	}
 	
 	
@@ -30,10 +33,15 @@ public class TestSenario_1 extends BaseTest{
 	public void verify_login_page_navigation() throws IOException {
 		HomePage hp = new HomePage(driver);
 		hp.loginAndSignup.click();
+		logger.info("login page is opened");
 		String loginIntro = hp.getLoginText();
 		hp.skilLoginPage();
+		logger.info("login page skiped");
 
 		Assert.assertEquals(loginIntro, "Login for a seamless experience");
+		logger.info("login page is validated");
+		
+		logger.info("Test case 2 passed");
 	}
 	
 	
@@ -45,8 +53,10 @@ public class TestSenario_1 extends BaseTest{
 		
 		if(loc_field.equals("locbox") && input_field.equals("Search")) {
 			Assert.assertTrue(true);
+			logger.info("location and search field is validated");
 		}else {
 			Assert.assertFalse(false);
+			logger.error("Location and search field test case failed");
 		}
 	}
 }

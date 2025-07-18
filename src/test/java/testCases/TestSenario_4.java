@@ -2,6 +2,7 @@ package testCases;
 
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,12 +26,6 @@ public class TestSenario_4 extends BaseTest{
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         
         try {
-            System.out.println("Pop-up closed successfully.");
-        } catch (Exception e) {
-            System.out.println("No pop-up found or already closed.");
-        }
-
-        try {
             GymServicePage gymPage = new GymServicePage(driver);
             ActionsUtilis.scrollByAmount(driver, 0, 300);
             
@@ -51,8 +46,8 @@ public class TestSenario_4 extends BaseTest{
     }
 
 
-    @Test(priority = 2)
-    public void test_sort_by_relevance() {
+    @Test(priority = 2, dataProvider = "getDataForCarWashing")
+    public void test_sort_by_relevance(String location, String data) {
 
         GymServicePage gymPage = new GymServicePage(driver);
         gymPage.sortBy.click();
@@ -62,7 +57,7 @@ public class TestSenario_4 extends BaseTest{
         wait.until(ExpectedConditions.visibilityOfAllElements(gymPage.relevenceList));
         for (WebElement list : gymPage.relevenceList) {
             String listingText = list.getText();
-            Assert.assertTrue(listingText.contains("Chennai"), "Listing does not contain 'Chennai': " + listingText);
+            Assert.assertTrue(listingText.contains(location), "Listing does not contain 'Chennai': " + listingText);
         }
         //System.out.println("Rating elements detected: " + gymPage.relevenceList.size());
     }
@@ -225,7 +220,9 @@ public class TestSenario_4 extends BaseTest{
         WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOf(gymPage.jdTrust));
         
-		gymPage.jdTrust.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);",gymPage.jdTrust);
+		js.executeScript("arguments[0].click();",gymPage.jdTrust);
 
         Assert.assertTrue(gymPage.assertJdtrust.isDisplayed(),"Jd Trust filter should be active");
     }

@@ -21,16 +21,22 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import utils.ExcelUtils;
 
 public class BaseTest {
 	public static WebDriver driver;
 	public static String baseUrl;
+	public static Logger logger;
 	
 	@BeforeTest
 	@Parameters({"os","browser","execution_env"})
 	public WebDriver setUpDriver(String os, String browser, String execution_env) {
 		
+		
+		logger = LogManager.getLogger(this.getClass());
 		Properties p =  new Properties();
 		try {
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\config.properties");
@@ -57,21 +63,21 @@ public class BaseTest {
 			if(browser.equalsIgnoreCase("chrome")) {
 				ChromeOptions option = new ChromeOptions();
 				option.addArguments("--disable-blink-features=AutomationControlled");
-//				option.addArguments("--disable-notifications");
+				option.addArguments("--disable-notifications");
 				capabalities.setBrowserName("chrome");
 				capabalities.setCapability(ChromeOptions.CAPABILITY, option);
 			}
 			else if(browser.equalsIgnoreCase("edge")) {
 				EdgeOptions option = new EdgeOptions();
 				option.addArguments("--disable-blink-features=AutomationControlled");
-//				option.addArguments("--disable-notifications");
+				option.addArguments("--disable-notifications");
 				capabalities.setBrowserName("MicrosoftEdge");
 				capabalities.setCapability(EdgeOptions.CAPABILITY, option);
 				
 			}
 			else if(browser.equalsIgnoreCase("firefox")) {
 				FirefoxOptions options = new FirefoxOptions();
-//			    options.addPreference("dom.webnotifications.enabled", false); // Disable notifications
+			    options.addPreference("dom.webnotifications.enabled", false); // Disable notifications
 			    options.addArguments("--disable-blink-features=AutomationControlled"); // Similar to Edge's automation control
 			    capabalities.setBrowserName("firefox");
 			    capabalities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
@@ -97,18 +103,18 @@ public class BaseTest {
 				option.addArguments("--disable-blink-features=AutomationControlled");
 				option.addArguments("--disable-notifications");
 				driver = new ChromeDriver(option);
-//				logger.info("Chrome browser opened successfully");
+				logger.info("Chrome browser opened successfully");
 			}
 			else if(browser.equalsIgnoreCase("edge")){
 				EdgeOptions option = new EdgeOptions();
 				option.addArguments("--disable-blink-features=AutomationControlled");
 				option.addArguments("--disable-notifications");
 				driver = new EdgeDriver(option);
-//				logger.info("Edge browser opened successfully");
+				logger.info("Edge browser opened successfully");
 			}
 			else {
 				System.out.println("no matching browser......");
-//				logger.info("no matching browser......");
+				logger.info("no matching browser......");
 				return null;
 			}
 		}
@@ -137,7 +143,9 @@ public class BaseTest {
 	
 	@AfterTest
 	public void tearDown() {
+		logger.info("browser terminated...");
 		driver.quit();
+		
 	}
 }
 

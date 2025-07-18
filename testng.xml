@@ -10,7 +10,7 @@
   <test thread-count="5" name="Test">
   
   	<parameter name="os" value="windows"/>
-   	<parameter name="browser" value="edge"/>
+   	<parameter name="browser" value="chrome"/>
    	<parameter name="execution_env" value="local"/>
     <classes>
       <class name="testCases.TestSenario_1"/>

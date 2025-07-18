@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<suite name="Suite" thread-count="3">
+<suite name="Suite" parallel="tests" >
  
 	<listeners>
 		<listener class-name="utils.ExtentReportManager"/>
 	</listeners> 
 	
-  <test thread-count="5" name="chrometest">
+  <test  name="chrometest" parallel="false">
   	
   	<parameter name="os" value="windows"/>
    	<parameter name="browser" value="chrome"/>
-   	<parameter name="execution_env" value="local"/>
+   	<parameter name="execution_env" value="remote"/>
     <classes>
       <class name="testCases.TestSenario_1"/>
       <class name="testCases.TestSenario_2"/>
@@ -21,11 +21,11 @@
   </test> <!-- Test -->
   
   
-  <test thread-count="5" name="edgetest">
+  <test name="edgetest" parallel="false">
   
   	<parameter name="os" value="windows"/>
    	<parameter name="browser" value="edge"/>
-   	<parameter name="execution_env" value="local"/>
+   	<parameter name="execution_env" value="remote"/>
     <classes>
       <class name="testCases.TestSenario_1"/>
       <class name="testCases.TestSenario_2"/>
