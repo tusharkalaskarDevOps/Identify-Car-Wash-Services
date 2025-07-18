@@ -2,6 +2,7 @@ package testCases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,6 +22,7 @@ public class TestSenario_3 extends BaseTest{
 		String ExpectedText = "Free Listing";
 		
 		Assert.assertEquals(ActualText,ExpectedText);
+		logger.info("Free Listing button is validated at homepage");
 	}
 	
 	
@@ -28,9 +30,13 @@ public class TestSenario_3 extends BaseTest{
 	public void freeListing_Button_Click() {
 		HomePage homepage = new HomePage(driver);
 		homepage.freeListing.click();
+		logger.info("Free Listing button clicked");
 		String ActualText = driver.getTitle();
+		logger.info("Title of Free Listing page captured");
 		
 		Assert.assertEquals(ActualText,"Unlock Business Growth | Get Listed for FREE on Justdial");
+		logger.info("Free Listing page is validated");
+
 	}
 	
 	
@@ -38,17 +44,24 @@ public class TestSenario_3 extends BaseTest{
 	public void freeListing_Mobile_TextField_invalid() throws IOException, InterruptedException {
 				
 		FreeListingPage freelistingpage = new FreeListingPage(driver);
-		freelistingpage.enterWrongPhn("123464645");
+		int num = (int)(Math.random()*10);
+		freelistingpage.enterWrongPhn("12346464"+Integer.toString(num));
+		
+		logger.info("Wrong Phone no is provided");
 		try{
 			String errormessage = freelistingpage.captureErrorMessage();
 			String Actual_message = errormessage;
+			logger.info("Error message is captured");
 			String Expected_messsage = "Please Enter a Valid Mobile Number"; 
 			ExcelUtils.write_error_message_ofFreeListing(errormessage);
-			String path=Screenshots.screenShot("errorMsg", driver);
+			logger.info("Error message is stored in excel sheet");
+			Screenshots.screenShot("errorMsg", driver);
 			Assert.assertEquals(Actual_message,Expected_messsage);
+			logger.info("Error message is validated");
 		}
 		catch(IOException e) {
 			System.out.println("Exception is found");
+			logger.error("Error message test failed");
 		}	
 	}
 	
@@ -57,17 +70,26 @@ public class TestSenario_3 extends BaseTest{
 	public void freeListing_Mobile_TextField_valid() throws InterruptedException, IOException {
 		FreeListingPage freelistingpage = new FreeListingPage(driver);
 		driver.navigate().refresh();
-		freelistingpage.enterCorrectPhn("8342310004");
+		int num = (int)(Math.random()*10);
+		freelistingpage.enterCorrectPhn("954521458"+Integer.toString(num));
+		logger.info("Valid Phone no is entered");
 		String otpMsg = freelistingpage.otpFinder.getText();
+		logger.info("validating OTP field is visible");
 		String actual_message = otpMsg;
+		
 		String expected_messsage = "Enter the code sent to ";
-		String path=Screenshots.screenShot("otpPage", driver);
+		Screenshots.screenShot("otpPage", driver);
 		freelistingpage.crossOTP();
+		
 		freelistingpage.logo.click();
+		
+		logger.info("free listing page closed and redirect to home page");
 		if(actual_message.contains(expected_messsage)) {
 			Assert.assertTrue(true);
+			logger.info("Otp page validated");
 		}else {
 			Assert.assertTrue(false);
+			logger.error("Otp test case failed");
 		}
 	}
 }

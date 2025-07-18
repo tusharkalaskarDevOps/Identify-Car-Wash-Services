@@ -40,7 +40,7 @@ public class FreeListingPage extends BasePage{
 	public WebElement otpFinder;
 	
 	By crossOtp=By.xpath("//*[@id=\"mainContent\"]/div[9]/div/div[1]/button");
-	
+
 	//Actions
 	
 	//Method for passing the wrong phone number and clicking on submit button
@@ -72,7 +72,9 @@ public class FreeListingPage extends BasePage{
 	}
 	
 	public void crossOTP() {
+		System.out.println("otp cross start");
 		driver.findElement(crossOtp).click();
+		System.out.println("otp cross end");
 	}
 	
 }

@@ -2,7 +2,6 @@ package pageObjectModels;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,8 +10,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utils.ExcelUtils;
-import utils.Screenshots;
 
 public class HomePage extends BasePage{
 	
@@ -76,7 +73,7 @@ public class HomePage extends BasePage{
 		
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(location));
-//		locationOpton.click();
+		locationOpton.click();
 	}
 	
 	public void serviceSearch(String serach_text) throws IOException, InterruptedException {

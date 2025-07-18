@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="Suite" parallel="tests" >
+ 
+	<listeners>
+		<listener class-name="utils.ExtentReportManager"/>
+	</listeners> 
+	
+  <test  name="chrometest" parallel="false">
+  	
+  	<parameter name="os" value="windows"/>
+   	<parameter name="browser" value="chrome"/>
+   	<parameter name="execution_env" value="remote"/>
+    <classes>
+      <class name="testCases.TestSenario_1"/>
+      <class name="testCases.TestSenario_2"/>
+      <class name="testCases.TestSenario_3"/>
+      <class name="testCases.TestSenario_4"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test name="edgetest" parallel="false">
+  
+  	<parameter name="os" value="windows"/>
+   	<parameter name="browser" value="edge"/>
+   	<parameter name="execution_env" value="remote"/>
+    <classes>
+      <class name="testCases.TestSenario_1"/>
+      <class name="testCases.TestSenario_2"/>
+      <class name="testCases.TestSenario_3"/>
+      <class name="testCases.TestSenario_4"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

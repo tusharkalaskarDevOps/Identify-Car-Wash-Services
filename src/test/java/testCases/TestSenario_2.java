@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 
 import baseTest.BaseTest;
 import pageObjectModels.CarWashServicePage;
-import pageObjectModels.HomePage;
 import utils.ActionsUtilis;
 import utils.Screenshots;
 
@@ -23,13 +22,17 @@ public class TestSenario_2 extends BaseTest{
 		CarWashServicePage csp = new CarWashServicePage(driver);
 		try {
 			csp.searchCarWashService(location, searchText);
+			logger.info("Location and car wash service provided");
 			String actualTitle2 = csp.getTitle();
-			String path=Screenshots.screenShot("CarWashingPage", driver);
-			
+			logger.info("Car wash service title captured");
+			Screenshots.screenShot("CarWashingPage", driver);
+			logger.info("Car wash service screenshot captured");
 			if(actualTitle2.contains("Top Car Washing Services")) {
 				Assert.assertTrue(true);
+				logger.info("Car wash service title validated");
 			}else {
 				Assert.assertTrue(false);
+				logger.info("Car wash service title validation failed");
 			}
 			
 		} catch (IOException e) {
@@ -45,6 +48,7 @@ public class TestSenario_2 extends BaseTest{
 		CarWashServicePage csp = new CarWashServicePage(driver);
 		boolean isSame = csp.check_location("Chennai");
 		Assert.assertTrue(isSame);
+		logger.info("The location as Chennai is validated");
 	}
 	
 	
@@ -52,7 +56,10 @@ public class TestSenario_2 extends BaseTest{
 	public void verify_search_result_details() {
 		CarWashServicePage csp = new CarWashServicePage(driver);
 		ActionsUtilis.scrollByAmount(driver, 0,100);
+		logger.info("Car wash page scrolled");
 		Assert.assertTrue(csp.checkForAllFielsDataIsAvailable());
+		logger.info("service page is not empty");
+		logger.info("fields are avaiable in result");
 	}
 	
 
@@ -61,8 +68,11 @@ public class TestSenario_2 extends BaseTest{
 		CarWashServicePage csp = new CarWashServicePage(driver);
 		try {
 			csp.getCarWashingServiceandPhone();
+			logger.info("Car washing service names, phone no, rating, votes are stored in lists");
 			Assert.assertTrue(csp.isSortedOrNot());
-			String path=Screenshots.screenShot("ratingFilter", driver);
+			logger.info("Sorted is validated");
+			Screenshots.screenShot("ratingFilter", driver);
+			logger.info("Screenshot of rating captured");
 
 		} catch (InterruptedException | IOException e) {
 			e.printStackTrace();
@@ -75,6 +85,7 @@ public class TestSenario_2 extends BaseTest{
 		CarWashServicePage csp = new CarWashServicePage(driver);
 		//impliment code here
 		driver.findElement(By.xpath("//*[@id=\"__next\"]/section/header/div/div[1]/div/a/img")).click();
+		logger.info("Arrived to Homepage");
 		Assert.assertTrue(true);
 	}
 
