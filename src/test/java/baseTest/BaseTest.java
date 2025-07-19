@@ -31,6 +31,7 @@ public class BaseTest {
 	public static String baseUrl;
 	public static Logger logger;
 	
+	@SuppressWarnings("deprecation")
 	@BeforeTest
 	@Parameters({"os","browser","execution_env"})
 	public WebDriver setUpDriver(String os, String browser, String execution_env) {
@@ -83,8 +84,6 @@ public class BaseTest {
 			    capabalities.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
 			}
 
-
-
 			else {
 				System.out.println("no matching browser .....");
 			}
@@ -97,7 +96,6 @@ public class BaseTest {
 		else if(execution_env.equalsIgnoreCase("local")) {
 			
 			
-			//driver=new ChromeDriver(option);
 			if(browser.equalsIgnoreCase("chrome")) {
 				ChromeOptions option = new ChromeOptions();
 				option.addArguments("--disable-blink-features=AutomationControlled");
@@ -126,13 +124,12 @@ public class BaseTest {
 	}
 	
 	
-	
-	
 	@DataProvider(name = "getDataForCarWashing")
 	public static String[][] getDataForCarWashing() throws IOException{
 		String[][] data1 = ExcelUtils.readExcelForCarWashing();
 		return data1;
 	}
+	
 	
 	@DataProvider(name = "getDataForFreeListing")
 	public String[][] getDataForFreeListing() throws IOException{

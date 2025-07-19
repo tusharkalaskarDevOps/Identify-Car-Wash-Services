@@ -34,7 +34,6 @@ public class FreeListingPage extends BasePage{
 	@FindBy(xpath="//*[@id=\"__next\"]/div/div/header/div/div[1]/a/img")
 	public WebElement logo;
 
-	
 	//Locating the otp message for validation
 	@FindBy(xpath="//*[@id=\"mainContent\"]/div[9]/div/div[2]/p[1]")
 	public WebElement otpFinder;
@@ -71,10 +70,9 @@ public class FreeListingPage extends BasePage{
 		phoneInput.clear();
 	}
 	
+	//method to cross/Off otp page
 	public void crossOTP() {
-		System.out.println("otp cross start");
 		driver.findElement(crossOtp).click();
-		System.out.println("otp cross end");
 	}
 	
 }

@@ -16,7 +16,7 @@ public class TestSenario_2 extends BaseTest{
 	//Car washing test cases
 		
 	
-	@Test(priority = 1, dataProvider = "getDataForCarWashing", description = "To verify that  after entring \"Car washing service\" and click on search icon,car wash page appear or not.")
+	@Test(priority = 1, groups={"Regression"}, dataProvider = "getDataForCarWashing", description = "To verify that  after entring \"Car washing service\" and click on search icon,car wash page appear or not.")
 	public void search_car_washing_service_page_displayed(String location, String searchText) {
 				
 		CarWashServicePage csp = new CarWashServicePage(driver);
@@ -43,7 +43,7 @@ public class TestSenario_2 extends BaseTest{
 	}
 	
 	
-	@Test(priority=2, description = "To verify that after selecting the location near by the user,then result are according to location or not")
+	@Test(priority=2, groups={"Regression"}, description = "To verify that after selecting the location near by the user,then result are according to location or not")
 	public void verify_results_by_location() {
 		CarWashServicePage csp = new CarWashServicePage(driver);
 		boolean isSame = csp.check_location("Chennai");
@@ -52,7 +52,7 @@ public class TestSenario_2 extends BaseTest{
 	}
 	
 	
-	@Test(priority=3, description = "To verify that each search result contains service name, contact number, and other details")
+	@Test(priority=3, groups={"Regression"}, description = "To verify that each search result contains service name, contact number, and other details")
 	public void verify_search_result_details() {
 		CarWashServicePage csp = new CarWashServicePage(driver);
 		ActionsUtilis.scrollByAmount(driver, 0,100);
@@ -63,7 +63,7 @@ public class TestSenario_2 extends BaseTest{
 	}
 	
 
-	@Test(priority=4, description = "To verify that after Applying Filter for rating then all displayed services have rating 4+")
+	@Test(priority=4, groups={"Regression"}, description = "To verify that after Applying Filter for rating then all displayed services have rating 4+")
 	public void verify_rating_filter_applied() {
 		CarWashServicePage csp = new CarWashServicePage(driver);
 		try {
@@ -80,13 +80,21 @@ public class TestSenario_2 extends BaseTest{
 	}
 	
 	
-	@Test(priority=5, description = "To verify whether 'BEST DEAL' filter in search results page is working or not.")
+	@Test(priority=5, groups={"Regression"}, description = "To verify whether 'BEST DEAL' filter in search results page is working or not.")
 	public void verify_best_deal_filter() {
 		CarWashServicePage csp = new CarWashServicePage(driver);
-		//impliment code here
-		driver.findElement(By.xpath("//*[@id=\"__next\"]/section/header/div/div[1]/div/a/img")).click();
-		logger.info("Arrived to Homepage");
-		Assert.assertTrue(true);
+		try {
+			csp.deals.click();
+	        logger.info("clicked on deals");
+	        Assert.assertTrue(csp.assertDeals.isDisplayed(),"Deals filter should be active");
+	        logger.info("Test case validated");
+	        
+		}catch(Exception e) {
+			logger.info("Test case verify_best_deal_filter failes");
+		}finally {
+			driver.findElement(By.xpath("//*[@id=\"__next\"]/section/header/div/div[1]/div/a/img")).click();
+			logger.info("redirected to Homepage");
+		}
 	}
 
 	

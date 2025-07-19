@@ -1,22 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="31" passed="31" failed="0" skipped="0">
+<testng-results ignored="0" total="31" passed="27" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-18T14:32:41 IST" name="Suite" finished-at="2025-07-18T14:33:33 IST" duration-ms="52528">
+  <suite started-at="2025-07-19T12:46:01 IST" name="Suite" finished-at="2025-07-19T12:47:35 IST" duration-ms="93607">
     <groups>
+      <group name="Regression">
+        <method signature="TestSenario_2.search_car_washing_service_page_displayed(java.lang.String,java.lang.String)[pri:1, instance:testCases.TestSenario_2@bcec361]" name="search_car_washing_service_page_displayed" class="testCases.TestSenario_2"/>
+        <method signature="TestSenario_4.test_gym_option_navigation_and_display()[pri:1, instance:testCases.TestSenario_4@55fe41ea]" name="test_gym_option_navigation_and_display" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_2.verify_results_by_location()[pri:2, instance:testCases.TestSenario_2@bcec361]" name="verify_results_by_location" class="testCases.TestSenario_2"/>
+        <method signature="TestSenario_4.test_sort_by_relevance(java.lang.String,java.lang.String)[pri:2, instance:testCases.TestSenario_4@55fe41ea]" name="test_sort_by_relevance" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_2.verify_search_result_details()[pri:3, instance:testCases.TestSenario_2@bcec361]" name="verify_search_result_details" class="testCases.TestSenario_2"/>
+        <method signature="TestSenario_4.test_sort_by_rating()[pri:3, instance:testCases.TestSenario_4@55fe41ea]" name="test_sort_by_rating" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_2.verify_rating_filter_applied()[pri:4, instance:testCases.TestSenario_2@bcec361]" name="verify_rating_filter_applied" class="testCases.TestSenario_2"/>
+        <method signature="TestSenario_4.test_filter_by_sunday_open()[pri:4, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_sunday_open" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_2.verify_best_deal_filter()[pri:5, instance:testCases.TestSenario_2@bcec361]" name="verify_best_deal_filter" class="testCases.TestSenario_2"/>
+        <method signature="TestSenario_4.test_filter_by_locker_facility()[pri:5, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_locker_facility" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_clear_filters_removes_amenities()[pri:6, instance:testCases.TestSenario_4@55fe41ea]" name="test_clear_filters_removes_amenities" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_open_now()[pri:7, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_open_now" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_top_rated()[pri:8, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_top_rated" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_quick_response()[pri:9, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_quick_response" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_jd_verified()[pri:10, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_jd_verified" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_ratings_3_5_plus()[pri:11, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_ratings_3_5_plus" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_ratings_4_0_plus()[pri:12, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_ratings_4_0_plus" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_ratings_4_5_plus()[pri:13, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_ratings_4_5_plus" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_clear_rating_filter_removes_applied()[pri:14, instance:testCases.TestSenario_4@55fe41ea]" name="test_clear_rating_filter_removes_applied" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_deals()[pri:15, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_deals" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_filter_by_jd_trust()[pri:16, instance:testCases.TestSenario_4@55fe41ea]" name="test_filter_by_jd_trust" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.clearAllFilters()[pri:17, instance:testCases.TestSenario_4@55fe41ea]" name="clearAllFilters" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.test_no_filters_show_all_listings()[pri:18, instance:testCases.TestSenario_4@55fe41ea]" name="test_no_filters_show_all_listings" class="testCases.TestSenario_4"/>
+        <method signature="TestSenario_4.getGymSubMenuList()[pri:19, instance:testCases.TestSenario_4@55fe41ea]" name="getGymSubMenuList" class="testCases.TestSenario_4"/>
+      </group> <!-- Regression -->
       <group name="smoke">
         <method signature="TestSenario_1.verify_justdial_website_access()[pri:1, instance:testCases.TestSenario_1@3857f613]" name="verify_justdial_website_access" class="testCases.TestSenario_1"/>
+        <method signature="TestSenario_3.freeListing_Button()[pri:1, instance:testCases.TestSenario_3@26794848]" name="freeListing_Button" class="testCases.TestSenario_3"/>
+        <method signature="TestSenario_4.test_gym_option_navigation_and_display()[pri:1, instance:testCases.TestSenario_4@55fe41ea]" name="test_gym_option_navigation_and_display" class="testCases.TestSenario_4"/>
         <method signature="TestSenario_1.verify_login_page_navigation()[pri:2, instance:testCases.TestSenario_1@3857f613]" name="verify_login_page_navigation" class="testCases.TestSenario_1"/>
         <method signature="TestSenario_1.verify_homepage_elements_visibility()[pri:3, instance:testCases.TestSenario_1@3857f613]" name="verify_homepage_elements_visibility" class="testCases.TestSenario_1"/>
       </group> <!-- smoke -->
       <group name="sanity">
-        <method signature="TestSenario_1.verify_login_page_navigation()[pri:2, instance:testCases.TestSenario_1@3857f613]" name="verify_login_page_navigation" class="testCases.TestSenario_1"/>
-        <method signature="TestSenario_1.verify_homepage_elements_visibility()[pri:3, instance:testCases.TestSenario_1@3857f613]" name="verify_homepage_elements_visibility" class="testCases.TestSenario_1"/>
+        <method signature="TestSenario_3.freeListing_Button_Click()[pri:2, instance:testCases.TestSenario_3@26794848]" name="freeListing_Button_Click" class="testCases.TestSenario_3"/>
+        <method signature="TestSenario_3.freeListing_Mobile_TextField_invalid()[pri:3, instance:testCases.TestSenario_3@26794848]" name="freeListing_Mobile_TextField_invalid" class="testCases.TestSenario_3"/>
+        <method signature="TestSenario_3.freeListing_Mobile_TextField_valid()[pri:4, instance:testCases.TestSenario_3@26794848]" name="freeListing_Mobile_TextField_valid" class="testCases.TestSenario_3"/>
       </group> <!-- sanity -->
+      <group name="master">
+        <method signature="TestSenario_3.freeListing_Button_Click()[pri:2, instance:testCases.TestSenario_3@26794848]" name="freeListing_Button_Click" class="testCases.TestSenario_3"/>
+      </group> <!-- master -->
     </groups>
-    <test started-at="2025-07-18T14:32:41 IST" name="Test" finished-at="2025-07-18T14:33:33 IST" duration-ms="52528">
+    <test started-at="2025-07-19T12:46:01 IST" name="Test" finished-at="2025-07-19T12:47:35 IST" duration-ms="93607">
       <class name="testCases.TestSenario_1">
-        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-18T14:32:41 IST" name="setUpDriver" finished-at="2025-07-18T14:32:49 IST" duration-ms="7865" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-19T12:46:02 IST" name="setUpDriver" finished-at="2025-07-19T12:46:14 IST" duration-ms="12532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,25 +69,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="verify_justdial_website_access()[pri:1, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-18T14:32:49 IST" name="verify_justdial_website_access" description="To check if the Website &quot;justdial.com&quot; is opening" finished-at="2025-07-18T14:32:55 IST" duration-ms="6125" status="PASS">
+        <test-method signature="verify_justdial_website_access()[pri:1, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-19T12:46:14 IST" name="verify_justdial_website_access" description="To check if the Website &quot;justdial.com&quot; is opening" finished-at="2025-07-19T12:46:18 IST" duration-ms="4031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_justdial_website_access -->
-        <test-method signature="verify_login_page_navigation()[pri:2, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-18T14:32:55 IST" name="verify_login_page_navigation" description="To check whether the login page is open after clicking on loginandSignup button" finished-at="2025-07-18T14:32:55 IST" duration-ms="267" status="PASS">
+        <test-method signature="verify_login_page_navigation()[pri:2, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-19T12:46:18 IST" name="verify_login_page_navigation" description="To check whether the login page is open after clicking on loginandSignup button" finished-at="2025-07-19T12:46:19 IST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_page_navigation -->
-        <test-method signature="verify_homepage_elements_visibility()[pri:3, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-18T14:32:55 IST" name="verify_homepage_elements_visibility" description="To check whether the location box,search box,search button  are visible on home page or not." finished-at="2025-07-18T14:32:56 IST" duration-ms="85" status="PASS">
+        <test-method signature="verify_homepage_elements_visibility()[pri:3, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-19T12:46:19 IST" name="verify_homepage_elements_visibility" description="To check whether the location box,search box,search button  are visible on home page or not." finished-at="2025-07-19T12:46:19 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_homepage_elements_visibility -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-18T14:33:32 IST" name="tearDown" finished-at="2025-07-18T14:33:33 IST" duration-ms="1127" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TestSenario_1@3857f613]" started-at="2025-07-19T12:47:34 IST" name="tearDown" finished-at="2025-07-19T12:47:35 IST" duration-ms="1184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.TestSenario_1 -->
       <class name="testCases.TestSenario_2">
-        <test-method signature="search_car_washing_service_page_displayed(java.lang.String,java.lang.String)[pri:1, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-18T14:32:56 IST" name="search_car_washing_service_page_displayed" description="To verify that  after entring &quot;Car washing service&quot; and click on search icon,car wash page appear or not." data-provider="getDataForCarWashing" finished-at="2025-07-18T14:32:59 IST" duration-ms="2686" status="PASS">
+        <test-method signature="search_car_washing_service_page_displayed(java.lang.String,java.lang.String)[pri:1, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-19T12:46:19 IST" name="search_car_washing_service_page_displayed" description="To verify that  after entring &quot;Car washing service&quot; and click on search icon,car wash page appear or not." data-provider="getDataForCarWashing" finished-at="2025-07-19T12:46:22 IST" duration-ms="2865" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,47 +103,47 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_car_washing_service_page_displayed -->
-        <test-method signature="verify_results_by_location()[pri:2, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-18T14:32:59 IST" name="verify_results_by_location" description="To verify that after selecting the location near by the user,then result are according to location or not" finished-at="2025-07-18T14:32:59 IST" duration-ms="288" status="PASS">
+        <test-method signature="verify_results_by_location()[pri:2, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-19T12:46:22 IST" name="verify_results_by_location" description="To verify that after selecting the location near by the user,then result are according to location or not" finished-at="2025-07-19T12:46:23 IST" duration-ms="275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_results_by_location -->
-        <test-method signature="verify_search_result_details()[pri:3, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-18T14:32:59 IST" name="verify_search_result_details" description="To verify that each search result contains service name, contact number, and other details" finished-at="2025-07-18T14:32:59 IST" duration-ms="60" status="PASS">
+        <test-method signature="verify_search_result_details()[pri:3, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-19T12:46:23 IST" name="verify_search_result_details" description="To verify that each search result contains service name, contact number, and other details" finished-at="2025-07-19T12:46:23 IST" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_search_result_details -->
-        <test-method signature="verify_rating_filter_applied()[pri:4, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-18T14:32:59 IST" name="verify_rating_filter_applied" description="To verify that after Applying Filter for rating then all displayed services have rating 4+" finished-at="2025-07-18T14:33:06 IST" duration-ms="6675" status="PASS">
+        <test-method signature="verify_rating_filter_applied()[pri:4, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-19T12:46:23 IST" name="verify_rating_filter_applied" description="To verify that after Applying Filter for rating then all displayed services have rating 4+" finished-at="2025-07-19T12:46:32 IST" duration-ms="9009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_rating_filter_applied -->
-        <test-method signature="verify_best_deal_filter()[pri:5, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-18T14:33:06 IST" name="verify_best_deal_filter" description="To verify whether &#039;BEST DEAL&#039; filter in search results page is working or not." finished-at="2025-07-18T14:33:06 IST" duration-ms="77" status="PASS">
+        <test-method signature="verify_best_deal_filter()[pri:5, instance:testCases.TestSenario_2@bcec361]" started-at="2025-07-19T12:46:32 IST" name="verify_best_deal_filter" description="To verify whether &#039;BEST DEAL&#039; filter in search results page is working or not." finished-at="2025-07-19T12:46:33 IST" duration-ms="1328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_best_deal_filter -->
       </class> <!-- testCases.TestSenario_2 -->
       <class name="testCases.TestSenario_3">
-        <test-method signature="freeListing_Button()[pri:1, instance:testCases.TestSenario_3@26794848]" started-at="2025-07-18T14:33:06 IST" name="freeListing_Button" description="Test case for validating free listing button" finished-at="2025-07-18T14:33:07 IST" duration-ms="1202" status="PASS">
+        <test-method signature="freeListing_Button()[pri:1, instance:testCases.TestSenario_3@26794848]" started-at="2025-07-19T12:46:33 IST" name="freeListing_Button" description="Test case for validating free listing button" finished-at="2025-07-19T12:46:35 IST" duration-ms="1689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freeListing_Button -->
-        <test-method signature="freeListing_Button_Click()[pri:2, instance:testCases.TestSenario_3@26794848]" started-at="2025-07-18T14:33:07 IST" name="freeListing_Button_Click" description="Test case for validating the free listing page" finished-at="2025-07-18T14:33:10 IST" duration-ms="2698" status="PASS">
+        <test-method signature="freeListing_Button_Click()[pri:2, instance:testCases.TestSenario_3@26794848]" started-at="2025-07-19T12:46:35 IST" name="freeListing_Button_Click" description="Test case for validating the free listing page" finished-at="2025-07-19T12:46:39 IST" duration-ms="4373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freeListing_Button_Click -->
-        <test-method signature="freeListing_Mobile_TextField_invalid()[pri:3, instance:testCases.TestSenario_3@26794848]" started-at="2025-07-18T14:33:10 IST" name="freeListing_Mobile_TextField_invalid" description="Test case for wrong number validation" finished-at="2025-07-18T14:33:10 IST" duration-ms="510" status="PASS">
+        <test-method signature="freeListing_Mobile_TextField_invalid()[pri:3, instance:testCases.TestSenario_3@26794848]" started-at="2025-07-19T12:46:39 IST" name="freeListing_Mobile_TextField_invalid" description="Test case for wrong number validation" finished-at="2025-07-19T12:46:40 IST" duration-ms="551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freeListing_Mobile_TextField_invalid -->
-        <test-method signature="freeListing_Mobile_TextField_valid()[pri:4, instance:testCases.TestSenario_3@26794848]" started-at="2025-07-18T14:33:10 IST" name="freeListing_Mobile_TextField_valid" description="Test case for correct number validations" finished-at="2025-07-18T14:33:14 IST" duration-ms="3963" status="PASS">
+        <test-method signature="freeListing_Mobile_TextField_valid()[pri:4, instance:testCases.TestSenario_3@26794848]" started-at="2025-07-19T12:46:40 IST" name="freeListing_Mobile_TextField_valid" description="Test case for correct number validations" finished-at="2025-07-19T12:46:43 IST" duration-ms="3638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- freeListing_Mobile_TextField_valid -->
       </class> <!-- testCases.TestSenario_3 -->
       <class name="testCases.TestSenario_4">
-        <test-method signature="test_gym_option_navigation_and_display()[pri:1, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:14 IST" name="test_gym_option_navigation_and_display" finished-at="2025-07-18T14:33:15 IST" duration-ms="1054" status="PASS">
+        <test-method signature="test_gym_option_navigation_and_display()[pri:1, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:43 IST" name="test_gym_option_navigation_and_display" description="To verify that the &quot;Gym&quot; option is present and navigate to it. Click on it and confirm that the corresponding gym listings or details are displayed." finished-at="2025-07-19T12:46:49 IST" duration-ms="5709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_gym_option_navigation_and_display -->
-        <test-method signature="test_sort_by_relevance(java.lang.String,java.lang.String)[pri:2, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:15 IST" name="test_sort_by_relevance" data-provider="getDataForCarWashing" finished-at="2025-07-18T14:33:17 IST" duration-ms="1044" status="PASS">
+        <test-method signature="test_sort_by_relevance(java.lang.String,java.lang.String)[pri:2, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:49 IST" name="test_sort_by_relevance" description="To verify that the &quot;Relevance&quot; option is available under &quot;Sort By&quot;, and confirm that the results are sorted accordingly." data-provider="getDataForCarWashing" finished-at="2025-07-19T12:46:50 IST" duration-ms="1445" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,71 +159,349 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_sort_by_relevance -->
-        <test-method signature="test_sort_by_rating()[pri:3, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:17 IST" name="test_sort_by_rating" finished-at="2025-07-18T14:33:17 IST" duration-ms="167" status="PASS">
+        <test-method signature="test_sort_by_rating()[pri:3, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:50 IST" name="test_sort_by_rating" finished-at="2025-07-19T12:46:51 IST" duration-ms="199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_sort_by_rating -->
-        <test-method signature="test_filter_by_sunday_open()[pri:4, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:17 IST" name="test_filter_by_sunday_open" finished-at="2025-07-18T14:33:18 IST" duration-ms="1344" status="PASS">
+        <test-method signature="test_filter_by_sunday_open()[pri:4, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:51 IST" name="test_filter_by_sunday_open" finished-at="2025-07-19T12:46:52 IST" duration-ms="1339" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fcbea7b01f0e34818f00d9d2120b895, clickElement {id=f.DF3375391AA18CC94845246A0D05C423.d.8DC756AF222F3555684E70C2A0BAD4F9.e.947}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53487/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5fcbea7b01f0e34818f00d9d2120b895)] -> xpath: //button[text()='Apply']]
+Session ID: 5fcbea7b01f0e34818f00d9d2120b895]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fcbea7b01f0e34818f00d9d2120b895, clickElement {id=f.DF3375391AA18CC94845246A0D05C423.d.8DC756AF222F3555684E70C2A0BAD4F9.e.947}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53487/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5fcbea7b01f0e34818f00d9d2120b895)] -> xpath: //button[text()='Apply']]
+Session ID: 5fcbea7b01f0e34818f00d9d2120b895
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+at testCases.TestSenario_4.test_filter_by_sunday_open(TestSenario_4.java:91)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_sunday_open -->
-        <test-method signature="test_filter_by_locker_facility()[pri:5, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:18 IST" name="test_filter_by_locker_facility" finished-at="2025-07-18T14:33:19 IST" duration-ms="1259" status="PASS">
+        <test-method signature="test_filter_by_locker_facility()[pri:5, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:52 IST" name="test_filter_by_locker_facility" finished-at="2025-07-19T12:46:54 IST" duration-ms="1393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_locker_facility -->
-        <test-method signature="test_clear_filters_removes_amenities()[pri:6, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:19 IST" name="test_clear_filters_removes_amenities" finished-at="2025-07-18T14:33:19 IST" duration-ms="181" status="PASS">
+        <test-method signature="test_clear_filters_removes_amenities()[pri:6, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:54 IST" name="test_clear_filters_removes_amenities" finished-at="2025-07-19T12:46:54 IST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_clear_filters_removes_amenities -->
-        <test-method signature="test_filter_by_open_now()[pri:7, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:19 IST" name="test_filter_by_open_now" finished-at="2025-07-18T14:33:21 IST" duration-ms="1120" status="PASS">
+        <test-method signature="test_filter_by_open_now()[pri:7, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:54 IST" name="test_filter_by_open_now" finished-at="2025-07-19T12:46:57 IST" duration-ms="2726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_open_now -->
-        <test-method signature="test_filter_by_top_rated()[pri:8, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:21 IST" name="test_filter_by_top_rated" finished-at="2025-07-18T14:33:21 IST" duration-ms="776" status="PASS">
+        <test-method signature="test_filter_by_top_rated()[pri:8, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:57 IST" name="test_filter_by_top_rated" finished-at="2025-07-19T12:46:58 IST" duration-ms="1220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_top_rated -->
-        <test-method signature="test_filter_by_quick_response()[pri:9, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:21 IST" name="test_filter_by_quick_response" finished-at="2025-07-18T14:33:22 IST" duration-ms="901" status="PASS">
+        <test-method signature="test_filter_by_quick_response()[pri:9, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:58 IST" name="test_filter_by_quick_response" finished-at="2025-07-19T12:46:59 IST" duration-ms="1410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_quick_response -->
-        <test-method signature="test_filter_by_jd_verified()[pri:10, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:22 IST" name="test_filter_by_jd_verified" finished-at="2025-07-18T14:33:24 IST" duration-ms="1456" status="PASS">
+        <test-method signature="test_filter_by_jd_verified()[pri:10, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:46:59 IST" name="test_filter_by_jd_verified" finished-at="2025-07-19T12:47:02 IST" duration-ms="2406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_jd_verified -->
-        <test-method signature="test_filter_by_ratings_3_5_plus()[pri:11, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:24 IST" name="test_filter_by_ratings_3_5_plus" finished-at="2025-07-18T14:33:25 IST" duration-ms="1464" status="PASS">
+        <test-method signature="test_filter_by_ratings_3_5_plus()[pri:11, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:02 IST" name="test_filter_by_ratings_3_5_plus" finished-at="2025-07-19T12:47:07 IST" duration-ms="5689" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_ratings_3_5_plus -->
-        <test-method signature="test_filter_by_ratings_4_0_plus()[pri:12, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:25 IST" name="test_filter_by_ratings_4_0_plus" finished-at="2025-07-18T14:33:26 IST" duration-ms="833" status="PASS">
+        <test-method signature="test_filter_by_ratings_4_0_plus()[pri:12, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:07 IST" name="test_filter_by_ratings_4_0_plus" finished-at="2025-07-19T12:47:09 IST" duration-ms="1363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_ratings_4_0_plus -->
-        <test-method signature="test_filter_by_ratings_4_5_plus()[pri:13, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:26 IST" name="test_filter_by_ratings_4_5_plus" finished-at="2025-07-18T14:33:27 IST" duration-ms="838" status="PASS">
+        <test-method signature="test_filter_by_ratings_4_5_plus()[pri:13, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:09 IST" name="test_filter_by_ratings_4_5_plus" finished-at="2025-07-19T12:47:11 IST" duration-ms="2046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_ratings_4_5_plus -->
-        <test-method signature="test_clear_rating_filter_removes_applied()[pri:14, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:27 IST" name="test_clear_rating_filter_removes_applied" finished-at="2025-07-18T14:33:27 IST" duration-ms="154" status="PASS">
+        <test-method signature="test_clear_rating_filter_removes_applied()[pri:14, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:11 IST" name="test_clear_rating_filter_removes_applied" finished-at="2025-07-19T12:47:11 IST" duration-ms="150" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fcbea7b01f0e34818f00d9d2120b895, clickElement {id=f.DF3375391AA18CC94845246A0D05C423.d.8DC756AF222F3555684E70C2A0BAD4F9.e.1341}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53487/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5fcbea7b01f0e34818f00d9d2120b895)] -> xpath: //div[text()='Clear']]
+Session ID: 5fcbea7b01f0e34818f00d9d2120b895]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fcbea7b01f0e34818f00d9d2120b895, clickElement {id=f.DF3375391AA18CC94845246A0D05C423.d.8DC756AF222F3555684E70C2A0BAD4F9.e.1341}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53487/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5fcbea7b01f0e34818f00d9d2120b895)] -> xpath: //div[text()='Clear']]
+Session ID: 5fcbea7b01f0e34818f00d9d2120b895
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+at testCases.TestSenario_4.test_clear_rating_filter_removes_applied(TestSenario_4.java:235)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_clear_rating_filter_removes_applied -->
-        <test-method signature="test_filter_by_deals()[pri:15, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:27 IST" name="test_filter_by_deals" finished-at="2025-07-18T14:33:28 IST" duration-ms="1232" status="PASS">
+        <test-method signature="test_filter_by_deals()[pri:15, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:11 IST" name="test_filter_by_deals" finished-at="2025-07-19T12:47:21 IST" duration-ms="10087" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span/span[text()='Deals']"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fcbea7b01f0e34818f00d9d2120b895, findElement {using=xpath, value=//span/span[text()='Deals']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53487/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fcbea7b01f0e34818f00d9d2120b895]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span/span[text()='Deals']"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fcbea7b01f0e34818f00d9d2120b895, findElement {using=xpath, value=//span/span[text()='Deals']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53487/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fcbea7b01f0e34818f00d9d2120b895
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+at testCases.TestSenario_4.test_filter_by_deals(TestSenario_4.java:245)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_deals -->
-        <test-method signature="test_filter_by_jd_trust()[pri:16, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:28 IST" name="test_filter_by_jd_trust" finished-at="2025-07-18T14:33:29 IST" duration-ms="1129" status="PASS">
+        <test-method signature="test_filter_by_jd_trust()[pri:16, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:21 IST" name="test_filter_by_jd_trust" finished-at="2025-07-19T12:47:22 IST" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_filter_by_jd_trust -->
-        <test-method signature="clearAllFilters()[pri:17, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:29 IST" name="clearAllFilters" finished-at="2025-07-18T14:33:30 IST" duration-ms="587" status="PASS">
+        <test-method signature="clearAllFilters()[pri:17, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:22 IST" name="clearAllFilters" finished-at="2025-07-19T12:47:23 IST" duration-ms="693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearAllFilters -->
-        <test-method signature="test_no_filters_show_all_listings()[pri:18, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:30 IST" name="test_no_filters_show_all_listings" finished-at="2025-07-18T14:33:32 IST" duration-ms="1828" status="PASS">
+        <test-method signature="test_no_filters_show_all_listings()[pri:18, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:23 IST" name="test_no_filters_show_all_listings" finished-at="2025-07-19T12:47:33 IST" duration-ms="10389" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='Locker Facility']"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fcbea7b01f0e34818f00d9d2120b895, findElement {using=xpath, value=//label[@for='Locker Facility']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53487/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fcbea7b01f0e34818f00d9d2120b895]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='Locker Facility']"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5fcbea7b01f0e34818f00d9d2120b895, findElement {using=xpath, value=//label[@for='Locker Facility']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2407425\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53487}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53487/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5fcbea7b01f0e34818f00d9d2120b895
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+at testCases.TestSenario_4.test_no_filters_show_all_listings(TestSenario_4.java:306)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_no_filters_show_all_listings -->
-        <test-method signature="getGymSubMenuList()[pri:19, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-18T14:33:32 IST" name="getGymSubMenuList" finished-at="2025-07-18T14:33:32 IST" duration-ms="388" status="PASS">
+        <test-method signature="getGymSubMenuList()[pri:19, instance:testCases.TestSenario_4@55fe41ea]" started-at="2025-07-19T12:47:33 IST" name="getGymSubMenuList" finished-at="2025-07-19T12:47:34 IST" duration-ms="479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getGymSubMenuList -->

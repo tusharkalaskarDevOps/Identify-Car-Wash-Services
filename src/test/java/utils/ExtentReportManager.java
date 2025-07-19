@@ -31,26 +31,21 @@ public class ExtentReportManager implements ITestListener{
 
 	public void onStart(ITestContext testContext) {
 		
-		/*SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
-		Date dt=new Date();
-		String currentdatetimestamp=df.format(dt);
-		*/
-		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 
-		sparkReporter.config().setDocumentTitle("opencart Automation Report"); // Title of report
-		sparkReporter.config().setReportName("opencart Functional Testing"); // name of the report
+		sparkReporter.config().setDocumentTitle("JustDial Automation Report"); // Title of report
+		sparkReporter.config().setReportName("JustDial Functional Testing"); // name of the report
 		sparkReporter.config().setTheme(Theme.DARK);
 		
 		extent = new ExtentReports();
 		extent.attachReporter(sparkReporter);
-		extent.setSystemInfo("Application", "opencart");
+		extent.setSystemInfo("Application", "JustDial");
 		extent.setSystemInfo("Module", "Admin");
 		extent.setSystemInfo("Sub Module", "Customers");
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
-		extent.setSystemInfo("Environemnt", "QA");
+		extent.setSystemInfo("Environemnt", "QAE");
 		
 		String os = testContext.getCurrentXmlTest().getParameter("os");
 		extent.setSystemInfo("Operating System", os);
@@ -80,7 +75,6 @@ public class ExtentReportManager implements ITestListener{
 		test.log(Status.INFO, result.getThrowable().getMessage());
 		
 		try {
-//			String imgPath1 = new BaseClass().captureScreen(result.getName());
 			String imgPath  = Screenshots.screenShot(result.getName(), BaseTest.driver);
 			test.addScreenCaptureFromPath(imgPath);
 			
