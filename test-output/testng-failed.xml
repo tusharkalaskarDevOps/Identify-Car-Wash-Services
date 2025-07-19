@@ -12,8 +12,11 @@
       <class name="testCases.TestSenario_4">
         <methods>
           <include name="setUpDriver"/>
+          <include name="test_clear_rating_filter_removes_applied"/>
           <include name="test_no_filters_show_all_listings"/>
+          <include name="test_filter_by_deals"/>
           <include name="tearDown"/>
+          <include name="test_filter_by_sunday_open"/>
         </methods>
       </class> <!-- testCases.TestSenario_4 -->
     </classes>

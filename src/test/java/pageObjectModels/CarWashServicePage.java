@@ -22,6 +22,7 @@ public class CarWashServicePage extends BasePage{
 	public static List<String> customersRating=new ArrayList<String>();
 	public static List<String> customersVotes=new ArrayList<String>();
 	public static List<String> phoneNumbers=new ArrayList<String>();
+	
 	public static List<String> service_locations=new ArrayList<String>();
 	
 	//Constructor
@@ -46,9 +47,6 @@ public class CarWashServicePage extends BasePage{
 	@FindBy(xpath="//*[@id=\"bd_call_popup\"]/div/div/div[1]")
 	public WebElement skipMobilePopup;
 	
-	//
-//	@FindBy(xpath ="*//span[@class='jsx-3349e7cd87e12d75 callcontent']")
-//	public List<WebElement> phnText;
 	@FindBy(xpath ="//*[@id=\"bd_call_popup\"]/div/div/div[2]/div[2]")
 	public WebElement phnText;
 	
@@ -62,9 +60,15 @@ public class CarWashServicePage extends BasePage{
 	@FindBy(xpath="//*[text()='Rating']")
 	WebElement ratingBtn;
 	
+	@FindBy(xpath = "//button[.//span[text()='Deals']]")
+	public WebElement deals;
+	
+	@FindBy(xpath = "//span/span[text()='Deals']")
+	public WebElement assertDeals;
+	
 	//By Variables
 	By serviceName=By.xpath("//h3");
-//	By title_loc = By.xpath("//*[@id=\"__next\"]/section/section/div/div[2]/div/div[2]/h1");
+	
 	//Actions
 	
 	public void getCarWashingServiceandPhone() throws InterruptedException, IOException {

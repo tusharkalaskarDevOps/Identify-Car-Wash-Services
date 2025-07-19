@@ -1,158 +1,86 @@
-2025-07-18 12:58:00 INFO  TestSenario_1:113 - Edge browser opened successfully
-2025-07-18 12:58:10 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 12:58:10 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 12:58:10 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 12:58:10 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 12:58:10 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 12:58:10 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 12:58:10 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 12:58:11 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 12:59:40 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 13:44:40 INFO  TestSenario_1:113 - Edge browser opened successfully
-2025-07-18 13:44:49 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 13:44:49 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 13:44:49 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 13:44:49 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 13:44:49 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 13:44:49 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 13:44:49 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 13:44:50 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 13:46:29 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 13:47:07 INFO  TestSenario_1:113 - Edge browser opened successfully
-2025-07-18 13:47:16 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 13:47:16 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 13:47:16 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 13:47:16 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 13:47:16 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 13:47:16 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 13:47:16 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 13:47:16 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 13:48:10 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 13:48:46 INFO  TestSenario_1:106 - Chrome browser opened successfully
-2025-07-18 13:48:55 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 13:48:55 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 13:48:55 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 13:48:55 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 13:48:55 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 13:48:55 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 13:48:55 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 13:48:55 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 13:49:26 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 13:53:27 INFO  TestSenario_1:106 - Chrome browser opened successfully
-2025-07-18 13:53:36 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 13:53:36 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 13:53:36 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 13:53:36 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 13:53:37 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 13:53:37 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 13:53:37 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 13:53:37 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 13:54:21 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 13:57:39 INFO  TestSenario_1:106 - Chrome browser opened successfully
-2025-07-18 13:57:48 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 13:57:48 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 13:57:48 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 13:57:48 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 13:57:48 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 13:57:48 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 13:57:48 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 13:57:48 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 13:58:33 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 14:01:06 INFO  TestSenario_1:106 - Chrome browser opened successfully
-2025-07-18 14:01:15 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 14:01:15 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 14:01:15 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 14:01:15 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 14:01:15 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 14:01:15 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 14:01:15 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 14:01:15 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 14:02:00 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 14:09:50 INFO  TestSenario_1:106 - Chrome browser opened successfully
-2025-07-18 14:09:59 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 14:09:59 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 14:09:59 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 14:09:59 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 14:10:00 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 14:10:00 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 14:10:00 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 14:10:00 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 14:10:38 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 14:11:42 INFO  TestSenario_1:106 - Chrome browser opened successfully
-2025-07-18 14:11:51 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 14:11:51 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 14:11:51 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 14:11:51 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 14:11:52 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 14:11:52 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 14:11:52 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 14:11:52 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 14:12:30 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 14:16:19 INFO  TestSenario_1:106 - Chrome browser opened successfully
-2025-07-18 14:16:29 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 14:16:29 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 14:16:29 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 14:16:29 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 14:16:29 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 14:16:29 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 14:16:29 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 14:16:29 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 14:16:35 INFO  TestSenario_1:25 - Location and car wash service provided
-2025-07-18 14:16:35 INFO  TestSenario_1:27 - Car wash service title captured
-2025-07-18 14:16:35 INFO  TestSenario_1:29 - Car wash service screenshot captured
-2025-07-18 14:16:35 INFO  TestSenario_1:32 - Car wash service title validated
-2025-07-18 14:16:35 INFO  TestSenario_1:51 - The location as Chennai is validated
-2025-07-18 14:16:35 INFO  TestSenario_1:59 - Car wash page scrolled
-2025-07-18 14:16:35 INFO  TestSenario_1:61 - service page is not empty
-2025-07-18 14:16:35 INFO  TestSenario_1:62 - fields are avaiable in result
-2025-07-18 14:16:42 INFO  TestSenario_1:71 - Car washing service names, phone no, rating, votes are stored in lists
-2025-07-18 14:16:42 INFO  TestSenario_1:73 - Sorted is validated
-2025-07-18 14:16:42 INFO  TestSenario_1:75 - Screenshot of rating captured
-2025-07-18 14:16:42 INFO  TestSenario_1:88 - Arrived to Homepage
-2025-07-18 14:16:43 INFO  TestSenario_1:25 - Free Listing button is validated at homepage
-2025-07-18 14:16:46 INFO  TestSenario_1:33 - Free Listing button clicked
-2025-07-18 14:16:46 INFO  TestSenario_1:35 - Title of Free Listing page captured
-2025-07-18 14:16:46 INFO  TestSenario_1:38 - Free Listing page is validated
-2025-07-18 14:16:46 INFO  TestSenario_1:50 - Wrong Phone no is provided
-2025-07-18 14:16:46 INFO  TestSenario_1:54 - Error message is captured
-2025-07-18 14:16:46 INFO  TestSenario_1:57 - Error message is stored in excel sheet
-2025-07-18 14:16:46 INFO  TestSenario_1:60 - Error message is validated
-2025-07-18 14:16:47 INFO  TestSenario_1:77 - Valid Phone no is entered
-2025-07-18 14:16:48 INFO  TestSenario_1:80 - validating OTP field is visible
-2025-07-18 14:16:49 INFO  TestSenario_1:94 - free listing page closed and redirect to home page
-2025-07-18 14:16:49 INFO  TestSenario_1:97 - Otp page validated
-2025-07-18 14:17:18 INFO  TestSenario_1:146 - browser terminated...
-2025-07-18 14:32:46 INFO  TestSenario_1:106 - Chrome browser opened successfully
-2025-07-18 14:32:55 INFO  TestSenario_1:23 - PopUp closed
-2025-07-18 14:32:55 INFO  TestSenario_1:27 - Home page is validated
-2025-07-18 14:32:55 INFO  TestSenario_1:28 - Test case 1 passed
-2025-07-18 14:32:55 INFO  TestSenario_1:36 - login page is opened
-2025-07-18 14:32:55 INFO  TestSenario_1:39 - login page skiped
-2025-07-18 14:32:55 INFO  TestSenario_1:42 - login page is validated
-2025-07-18 14:32:55 INFO  TestSenario_1:44 - Test case 2 passed
-2025-07-18 14:32:56 INFO  TestSenario_1:56 - location and search field is validated
-2025-07-18 14:32:59 INFO  TestSenario_1:25 - Location and car wash service provided
-2025-07-18 14:32:59 INFO  TestSenario_1:27 - Car wash service title captured
-2025-07-18 14:32:59 INFO  TestSenario_1:29 - Car wash service screenshot captured
-2025-07-18 14:32:59 INFO  TestSenario_1:32 - Car wash service title validated
-2025-07-18 14:32:59 INFO  TestSenario_1:51 - The location as Chennai is validated
-2025-07-18 14:32:59 INFO  TestSenario_1:59 - Car wash page scrolled
-2025-07-18 14:32:59 INFO  TestSenario_1:61 - service page is not empty
-2025-07-18 14:32:59 INFO  TestSenario_1:62 - fields are avaiable in result
-2025-07-18 14:33:06 INFO  TestSenario_1:71 - Car washing service names, phone no, rating, votes are stored in lists
-2025-07-18 14:33:06 INFO  TestSenario_1:73 - Sorted is validated
-2025-07-18 14:33:06 INFO  TestSenario_1:75 - Screenshot of rating captured
-2025-07-18 14:33:06 INFO  TestSenario_1:88 - Arrived to Homepage
-2025-07-18 14:33:07 INFO  TestSenario_1:25 - Free Listing button is validated at homepage
-2025-07-18 14:33:10 INFO  TestSenario_1:33 - Free Listing button clicked
-2025-07-18 14:33:10 INFO  TestSenario_1:35 - Title of Free Listing page captured
-2025-07-18 14:33:10 INFO  TestSenario_1:38 - Free Listing page is validated
-2025-07-18 14:33:10 INFO  TestSenario_1:50 - Wrong Phone no is provided
-2025-07-18 14:33:10 INFO  TestSenario_1:54 - Error message is captured
-2025-07-18 14:33:10 INFO  TestSenario_1:57 - Error message is stored in excel sheet
-2025-07-18 14:33:10 INFO  TestSenario_1:60 - Error message is validated
-2025-07-18 14:33:12 INFO  TestSenario_1:75 - Valid Phone no is entered
-2025-07-18 14:33:13 INFO  TestSenario_1:77 - validating OTP field is visible
-2025-07-18 14:33:14 INFO  TestSenario_1:86 - free listing page closed and redirect to home page
-2025-07-18 14:33:14 INFO  TestSenario_1:89 - Otp page validated
-2025-07-18 14:33:32 INFO  TestSenario_1:146 - browser terminated...
+2025-07-19 12:46:08 INFO  TestSenario_1:104 - Chrome browser opened successfully
+2025-07-19 12:46:18 INFO  TestSenario_1:20 - PopUp closed
+2025-07-19 12:46:18 INFO  TestSenario_1:23 - Home page is validated
+2025-07-19 12:46:18 INFO  TestSenario_1:24 - Test case 1 passed
+2025-07-19 12:46:18 INFO  TestSenario_1:32 - login page is opened
+2025-07-19 12:46:19 INFO  TestSenario_1:35 - login page skiped
+2025-07-19 12:46:19 INFO  TestSenario_1:37 - login page is validated
+2025-07-19 12:46:19 INFO  TestSenario_1:38 - Test case 2 passed
+2025-07-19 12:46:19 INFO  TestSenario_1:50 - location and search field is validated
+2025-07-19 12:46:22 INFO  TestSenario_1:25 - Location and car wash service provided
+2025-07-19 12:46:22 INFO  TestSenario_1:27 - Car wash service title captured
+2025-07-19 12:46:22 INFO  TestSenario_1:29 - Car wash service screenshot captured
+2025-07-19 12:46:22 INFO  TestSenario_1:32 - Car wash service title validated
+2025-07-19 12:46:23 INFO  TestSenario_1:51 - The location as Chennai is validated
+2025-07-19 12:46:23 INFO  TestSenario_1:59 - Car wash page scrolled
+2025-07-19 12:46:23 INFO  TestSenario_1:61 - service page is not empty
+2025-07-19 12:46:23 INFO  TestSenario_1:62 - fields are avaiable in result
+2025-07-19 12:46:32 INFO  TestSenario_1:71 - Car washing service names, phone no, rating, votes are stored in lists
+2025-07-19 12:46:32 INFO  TestSenario_1:73 - Sorted is validated
+2025-07-19 12:46:32 INFO  TestSenario_1:75 - Screenshot of rating captured
+2025-07-19 12:46:32 INFO  TestSenario_1:88 - clicked on deals
+2025-07-19 12:46:33 INFO  TestSenario_1:90 - Test case validated
+2025-07-19 12:46:33 INFO  TestSenario_1:96 - redirected to Homepage
+2025-07-19 12:46:35 INFO  TestSenario_1:22 - Free Listing button is validated at homepage
+2025-07-19 12:46:39 INFO  TestSenario_1:30 - Free Listing button clicked
+2025-07-19 12:46:39 INFO  TestSenario_1:32 - Title of Free Listing page captured
+2025-07-19 12:46:39 INFO  TestSenario_1:34 - Free Listing page is validated
+2025-07-19 12:46:39 INFO  TestSenario_1:46 - Wrong Phone no is provided
+2025-07-19 12:46:39 INFO  TestSenario_1:49 - Error message is captured
+2025-07-19 12:46:39 INFO  TestSenario_1:52 - Error message is stored in excel sheet
+2025-07-19 12:46:40 INFO  TestSenario_1:55 - Error message is validated
+2025-07-19 12:46:41 INFO  TestSenario_1:71 - Valid Phone no is entered
+2025-07-19 12:46:42 INFO  TestSenario_1:73 - validating OTP field is visible
+2025-07-19 12:46:43 INFO  TestSenario_1:79 - free listing page closed and redirect to home page
+2025-07-19 12:46:43 INFO  TestSenario_1:82 - Otp page validated
+2025-07-19 12:46:44 INFO  TestSenario_1:33 - Clicked on Gym
+2025-07-19 12:46:49 INFO  TestSenario_1:42 - The Gym page title is validated
+2025-07-19 12:46:49 INFO  TestSenario_1:56 - clicked on the sortby
+2025-07-19 12:46:49 INFO  TestSenario_1:58 - clicked on the relevence
+2025-07-19 12:46:50 INFO  TestSenario_1:67 - Validated whether Gym are present in Chennai
+2025-07-19 12:46:51 INFO  TestSenario_1:75 - clicked on relevence
+2025-07-19 12:46:51 INFO  TestSenario_1:77 - clicked on rating
+2025-07-19 12:46:51 INFO  TestSenario_1:80 - sortby test case is validated
+2025-07-19 12:46:52 INFO  TestSenario_1:88 - clicked on amenities
+2025-07-19 12:46:52 INFO  TestSenario_1:90 - clicked on sunday open
+2025-07-19 12:46:52 INFO  TestSenario_1:108 - clicked on amenities
+2025-07-19 12:46:52 INFO  TestSenario_1:110 - clicked on locker facility
+2025-07-19 12:46:52 INFO  TestSenario_1:112 - clicked on apply
+2025-07-19 12:46:54 INFO  TestSenario_1:115 - Locker elements detected:7
+2025-07-19 12:46:54 INFO  TestSenario_1:123 - clicked on amenities
+2025-07-19 12:46:54 INFO  TestSenario_1:125 - clicked on clear button
+2025-07-19 12:46:54 INFO  TestSenario_1:128 - Test case test_clear_filters_removes_amenities validated
+2025-07-19 12:46:55 INFO  TestSenario_1:136 - clicked on opennow
+2025-07-19 12:46:57 INFO  TestSenario_1:138 - Opennow button is validated
+2025-07-19 12:46:57 INFO  TestSenario_1:146 - clicked on top rated
+2025-07-19 12:46:58 INFO  TestSenario_1:148 - Test case test_filter_by_top_rated is validated
+2025-07-19 12:46:58 INFO  TestSenario_1:157 - clicked on quickresponse
+2025-07-19 12:46:59 INFO  TestSenario_1:159 - Test case test_filter_by_quick_response validated
+2025-07-19 12:46:59 INFO  TestSenario_1:161 - clicked on quickresponse to deselect it
+2025-07-19 12:47:00 INFO  TestSenario_1:170 - clicked on jdverified
+2025-07-19 12:47:02 INFO  TestSenario_1:172 - Test case test_filter_by_jd_verified validated
+2025-07-19 12:47:02 INFO  TestSenario_1:174 - clicked on jd_verified to deselect it
+2025-07-19 12:47:04 INFO  TestSenario_1:182 - clicked on rating drop down
+2025-07-19 12:47:04 INFO  TestSenario_1:184 - clicked on rating 3.5+
+2025-07-19 12:47:07 INFO  TestSenario_1:191 - rating of 3.5+ is validated
+2025-07-19 12:47:07 INFO  TestSenario_1:199 - clicked on rating drop down
+2025-07-19 12:47:07 INFO  TestSenario_1:201 - clicked on rating 4+
+2025-07-19 12:47:09 INFO  TestSenario_1:208 - rating of 4+ is validated
+2025-07-19 12:47:09 INFO  TestSenario_1:216 - clicked on rating drop down
+2025-07-19 12:47:09 INFO  TestSenario_1:218 - clicked on rating 4.5+
+2025-07-19 12:47:11 INFO  TestSenario_1:225 - rating of 4.5+ is validated
+2025-07-19 12:47:11 INFO  TestSenario_1:234 - clicked on rating drop down
+2025-07-19 12:47:11 INFO  TestSenario_1:244 - clicked on deals
+2025-07-19 12:47:21 INFO  TestSenario_1:261 - clicked on jdtrust
+2025-07-19 12:47:22 INFO  TestSenario_1:263 - Test case test_filter_by_jd_trust validated
+2025-07-19 12:47:22 INFO  TestSenario_1:273 - clicked on allfilters
+2025-07-19 12:47:22 INFO  TestSenario_1:275 - clicked on reset filters
+2025-07-19 12:47:22 INFO  TestSenario_1:277 - clicked on close button
+2025-07-19 12:47:23 INFO  TestSenario_1:290 - Test case clearAllFilters validated
+2025-07-19 12:47:23 INFO  TestSenario_1:300 - clicked on sortby
+2025-07-19 12:47:23 INFO  TestSenario_1:302 - clicked on relevence
+2025-07-19 12:47:23 INFO  TestSenario_1:305 - clicked on amenities
+2025-07-19 12:47:33 INFO  TestSenario_1:334 - All submenus are stored in list
+2025-07-19 12:47:34 INFO  TestSenario_1:339 - All submenus are stored in Excel File in Result3 sheet
+2025-07-19 12:47:34 INFO  TestSenario_1:341 - Test case getGymSubMenuList validated
+2025-07-19 12:47:34 INFO  TestSenario_1:143 - browser terminated...
